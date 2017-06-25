@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <link rel="stylesheet" href="list4_style.css">
+    <style>
+        
+    @keyframes reverse_blur{
+        from { -webkit-filter: none;
+            filter: none;}
+        to{-webkit-filter: blur(8px);
+            filter: blur(8px);}
+        }
+    
+    @keyframes opacity{
+        from{opacity: 0;}  
+        to{opacity: 1;}  
+        }
+    
+    @keyframes opacity_delay{
+        0%{opacity: 0;}
+        20%{opacity: 0;}
+        100%{opacity: 1;}  
+        }
+        
+    @keyframes nav_longer{
+            from {width : 200px;}
+            to {width : 1200px;}
+        }
+    
+    @keyframes moveRight{
+            from {transform:translateX(-20px);}
+            to {transform:translateX(0px);}
+        }
+        
+    @keyframes moveRight_delay{
+            0%{transform:translateX(-20px);}
+            20%{transform:translateX(-20px);}
+            100%{transform:translateX(0px);}
+        }
+      @keyframes moveLeft{
+            from {transform:translateX(20px);}
+            to {transform:translateX(0px);}
+        }    
+    @keyframes moveUp{
+            from {transform:translateY(50px);}
+            to {transform:translateY(0px);}
+        }
+        
+    .moveUp{
+        animation: moveUp;  
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+        
+    body{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            letter-spacing: 1px;
+        
+            
+        }
+
+    .container{
+        margin: auto;
+        width: 90%;
+        }
+
+        
+/*--navigation----------------------------------*/
+        
+    #nav_grad{
+        margin-top: 40px;
+        margin-bottom: 13px;
+        height: 14px;
+        width: 100%;
+        background: rgba(255, 180, 126, 73);
+        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        animation: nav_longer, opacity;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+        
+   
+    #nav_menu{
+            position: fixed;
+            color: #333333;
+        }   
+    #nav_menu a {
+        color: #333333;
+        text-decoration: none;
+        transition: all .5s;
+        }
+   #nav_menu input{
+        margin-top: -2px;
+        margin-left: 1070px;
+        border: none;
+        color: #333;
+        background-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        letter-spacing: 1px;
+        float: right; 
+        transition: all .5s;
+        } 
+
+  #nav_menu a:hover{
+        font-style: italic;
+        font-weight: 600;
+        color: #666;
+        background-color: rgba(255, 180, 126, .2);
+    
+    }
+
+   #nav_menu input:hover{
+        font-style: italic;
+        font-weight: 600;
+        color: #666;
+        background-color: rgba(79, 72, 255, .2);
+    
+    }  
+        
+/*-navigationEnd---------------------*/
+        
+    #grad_line{
+        height: 1px;
+        width: 100%;
+        background: rgba(255, 180, 126, 73);
+        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        animation: nav_longer, opacity;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+    
+    header{
+        height: 480px;
+        padding-top: 85px;
+    
+            
+        }
+        
+    #coverimg{
+        position: absolute;
+        top: -70px;
+        height: 850px;
+        z-index: -1;
+        right: 0px;
+        animation: opacity, moveLeft;
+        animation-duration: 2s;
+        clip: rect(0px, 1500px, 780px, 140px);
+    
+        }
+        
+    .title_container{
+            margin-top: 60px;
+        }
+    #title{
+            margin-top: 55px;
+            margin-left: 15px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 55px;
+            display: inline-block;
+            animation : moveRight, opacity;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            
+        }
+        
+        
+    #subtitle1{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 13px;
+            letter-spacing: 9px;
+            line-height: 30px;
+            animation : moveRight_delay, opacity_delay;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+        }
+        
+    #subtitle2{
+            margin-left: 20px;
+            margin-top: 12px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            line-height: 23px;
+            animation : moveRight_delay, opacity_delay;
+            animation-duration: 1.8s;
+            animation-timing-function: ease-in-out;
+        }
+        
+        
+               
+/*footer*/
+                
+    footer{
+            width: 100%;
+            height: 200px;
+            margin-bottom: 80px;
+        }
+    footer .container{
+            display: flex;
+        }
+    footer #prev{
+            width: 600px;
+            height: 200px;
+        }
+    footer #line{
+            margin-top: 20px;
+            width: 1px;
+            height: 160px;
+            background-color: #ccc; 
+        }
+    footer #next{
+            width: 599px;
+            height: 200px;
+        }
+        
+    footer #prev #textarea{
+            margin-top: 70px;
+            float: right;
+            margin-right: 130px;
+            color: #999;
+            transition: all .5s;
+            letter-spacing: 1.5px;
+        }
+    footer #prev #textarea #txt1{
+            font-size: 30px;
+            text-align: right;
+            font-weight: 500;
+        }
+    footer #prev #textarea #txt2{
+            margin-top: 15px;
+            font-size: 16px;
+            text-align: right;
+        }
+     footer #next #textarea{
+            margin-top: 70px;
+            margin-left: 130px;
+            color: #999;
+            transition: all .5s;
+            letter-spacing: 1.5px;
+        }
+    footer #next #textarea #txt1{
+            font-size: 30px;
+            font-weight: 500;
+        }
+    footer #next #textarea #txt2{
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    footer #next #textarea:hover{
+            color: #757575;
+            transform: translateX(5px);
+        }
+    footer #prev #textarea:hover{
+            color: #757575;
+            transform: translateX(-5px);
+        }
+        
+        
+        
+    </style>
+    
+</head>
+
+
+<body>
+        
+    <div class="container">
+        <nav>
+            <div id="nav_grad">
+            </div>
+            <div id="nav_menu">
+            <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/index.html" id="jihong">jihong.park</a>
+            <input type="button" value="work" id="nav_work">
+            </div>
+        </nav>
+        
+<!--        header-->
+       
+        <header>
+        <div class="title_container">
+            <div id="title">
+             Sreening 2015
+            </div>
+            
+            <div id="subtitle1">
+            VIDEO ART BOOKLET
+            </div>
+            <div id="subtitle2">
+            screening 2015 introduces 5 hot vidieo artist and their art.<br>
+            Critic criticize their artwork.
+            </div>
+            
+        </div>
+        <img src="img/screening2015/coverimg.png" alt="" id="coverimg">
+        </header>
+        <div id="grad_line"></div>
+                
+<!--        contents-->
+       
+       <section>
+           
+           <div id="sec1">
+              <div id="title">
+                COLORS
+                </div>
+                <div id="txt1">
+                Assign each individual color to each Artist.
+                </div>
+                <div class="divider">
+                    
+                    <div>
+                       <div id="color1"></div>
+                        Jisong Lee
+                    </div>
+                    <div>
+                        <div id="color2"></div>
+                         Ayoung Kim
+                    </div>
+                    <div>
+                       <div id="color3"></div>
+                        Kyungkun Park
+                    </div>
+                    <div>
+                       <div id="color4"></div>
+                        Kiwoun Shin
+                    </div>
+                    <div>
+                       <div id="color5"></div>
+                        Sung Rok Choi
+                    </div>
+                    
+                </div> 
+            </div>
+           
+            <div id="sec2">
+              <div id="title">
+                4 COLUMN GRID
+                </div>
+                <div id="txt1">
+                Based on 4 column grid, the layout was modified slightly to accommodate each chapter.
+                </div>
+                <img src="img/screening2015/column01.png" alt="">
+                <img src="img/screening2015/column02.png" alt="">
+                
+            </div>
+           
+           <div id="sec3">
+            <div id="title">
+                OTHER PAGES
+            </div>
+            <div id="txt01" class="caption">
+                 Cover - <span>Sung Rok Choi</span>
+            </div>
+            <img src="img/screening2015/page01_cover.png"  id="img01">
+            
+             <div id="txt02" class="caption">
+                 CV, Critic - <span>Sung Rok Choi</span>
+            </div>
+            <img src="img/screening2015/page02_CV.png"  id="img02">
+            
+             <div id="txt03" class="caption">
+                 Critic - <span>Sung Rok Choi</span>
+            </div>
+            <img src="img/screening2015/page03_Critic.png"  id="img03">
+            
+            <div id="txt04" class="caption">
+                 Interview - <span>Ayoung Kim</span>
+            </div>
+            <img src="img/screening2015/page04_Interview.png"  id="img04">
+            
+            <div id="txt05" class="caption">
+                 Cover - <span>Ki Woun Shin</span>
+            </div>
+            <img src="img/screening2015/page05_cover.png"  id="img05">
+               
+            <div id="txt06" class="caption">
+                 CV, Critic - <span>Ki Woun Shin</span>
+            </div>
+            <img src="img/screening2015/page06_cv.png"  id="img06">
+            
+            
+             </div>
+              
+              
+               
+           
+           
+           
+           
+           
+           
+           
+           
+       </section>
+       
+          <div id="bg1"></div>
+          <div id="bg2"></div>
+        
+<!--        contentsEnd-->
+        <footer>
+           <div id="grad_line"></div>
+           <div class="container"> 
+           <div id="prev">
+               <div id="textarea">
+                   <div id="txt1">PREV PROJECT</div>
+                   <div id="txt2">Aphasia</div>
+                </div>
+           </div>
+           <div id="line"></div>
+           <div id="next">
+               <div id="textarea">
+                   <div id="txt1">NEXT PROJECT</div>
+                   <div id="txt2">SODANIM</div>
+                </div>
+           </div>
+           </div>
+           <div id="grad_line"></div> 
+        </footer>
+
+  </div> 
+
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+
+<script>
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('section div').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                
+                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('#sec3 img').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.icon_container img').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                $(this).addClass('bounceIn',500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>    
+</body>
+</html>

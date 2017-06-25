@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   
+    <style>
+    @keyframes bg_longer{
+            from {background-size: 0% 1200px;}
+            to {background-size: 40% 1200px;}
+        }
+        
+    @keyframes reverse_blur{
+        from { -webkit-filter: none;
+            filter: none;}
+        to{-webkit-filter: blur(8px);
+            filter: blur(8px);}
+        }
+    
+    @keyframes opacity{
+        from{opacity: 0;}  
+        to{opacity: 1;}  
+        }
+        
+    @keyframes nav_longer{
+            from {width : 200px;}
+            to {width : 1200px;}
+        }
+        @keyframes positionDowntoUp{
+            from { transform}
+        }
+        
+    @keyframes moveX{
+            from {transform:translateX(-20px);}
+            to {transform:translateX(0px);}
+        }
+        
+    body{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            letter-spacing: 1px;
+            background-image: url(img/bg_grad1.png);
+            background-position: 100% 0;
+            background-size: 40% 1200px;
+            background-repeat: no-repeat;
+            animation: bg_longer, opacity;
+            animation-duration: .3s;
+            animation-timing-function: ease-in-out;
+            position: relative;
+            
+        }
+    img{
+            height: 500px;
+        }
+
+    .container{
+        margin: auto;
+        width: 1200px;
+        }
+        
+    nav{ 
+        position: fixed;
+        } 
+        
+        
+    #nav_grad{
+        margin-top: 40;
+        margin-bottom: 10px;
+        height: 20px;
+        width: 1200px;
+        background: rgba(255, 180, 126, 73);
+        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        animation: nav_longer, opacity;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+        
+        
+    a {
+        text-decoration: none;
+        color: #333333;
+        
+        }
+    input{
+            border: none;
+            color: #333;
+            background-color: transparent;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    #nav_work{
+        float: right;
+            
+        }
+    header{
+        height: 685px;
+        padding-top: 85px;            
+        }
+        
+/*title_animation---------------------------------------*/
+    .hidden {
+          opacity:0;
+    }
+    .console-container {
+        margin-top: 300;
+        margin-left: 50;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 55px;
+            display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size:4em;
+      height:100px;
+      width:550px;
+      position:relative;
+      color:#ccc;
+
+    }
+    .console-underscore {
+       display:inline-block;
+      position:relative;
+      top:-0.14em;
+      left:10px;
+    }
+/*title_animation_end-----------------------------------*/
+    
+    #title_add{
+          margin-left: 50;
+            font-size: 13px;
+            letter-spacing: 9;
+            display: inline-block;
+            animation: moveX, opacity;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+        }
+        
+     #subtitle{
+            float : right;
+            margin-top: -270;
+            margin-right: 110;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 50px;
+            color: rgba(200,200,200,0.5);
+            letter-spacing: 4px;
+            mix-blend-mode : multifly;
+            display: inline-block;
+            animation-name: reverse_blur;
+            animation-duration: 1s;
+            -webkit-filter: blur(8px);
+            filter: blur(8px);
+            transition: all 1s;
+        }
+        
+    #subtitle:hover{
+            -webkit-filter: none;
+            filter: none;
+            color: rgba(150,150,150,0.5);
+            font-style: none;
+        }
+    #title_work{
+            font-size: 30px;
+            text-align: center;
+            font-weight: 800;
+            color: ccc;
+        }
+    .list{
+           margin-top: 30px; 
+        }
+    .list_container{
+          display: flex;        
+        }
+        
+    .blist, .slist_left, .slist_right{
+            opacity: 0;
+        }
+        
+    .blist{
+            margin-top: 20px;
+            width: 1200px;
+            height: 500px;
+            background-color: #eee;  
+            transition: all .5s;
+        }
+    .slist_left{
+            width: 590px;
+            margin-top: 20px;
+            height: 500px;
+            background-color: #eee; 
+            transition: all .5s;
+        }
+    .slist_right{
+            width: 590px;
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 500px;
+            background-color: #eee;   
+            transition: all .5s;
+        }
+        
+    .slist_right:hover{
+            box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
+            transform: translateY(-3px);
+        }
+        
+    .slist_left:hover{
+            box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
+            transform: translateY(-3px);
+        }
+        
+    .blist:hover{
+            box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
+            transform: translateY(-3px);
+        }
+        
+    footer div{
+            width: 1200px;
+            height: 500px;
+        }
+    
+    </style>
+</head>
+
+
+
+
+
+
+
+
+    <body>
+        
+    <div class="container">
+       <div id="bg_grad">
+       </div>
+        <nav>
+            <div id="nav_grad">
+            </div>
+            <a href="opentutorials.org" id="jihong">jihong.park</a>
+            <input type="button" value="work" id="nav_work">
+        </nav>
+        <header>
+             
+              <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+            <br>
+            <div id="title_add">
+                MULTI FACATED DESIGNER
+            </div>
+            <div id="subtitle">
+                DESIGN <br>& CODING<br>
+                ILLUSTRATOR<BR>PHOTOSHOP<br>SKETCH<br>
+                HTML&CSS<br>JAVASCRIPt    
+            </div>
+        </header>
+        <section>
+        <div id="title_work">work</div> 
+        <div class="list">
+           <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/li1_zcrowd.html"><div class="blist"></div></a>
+           
+            <div class="list_container">
+               
+                <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/li1_zcrowd.html"><div class="slist_left"></div></a>
+                <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/li1_zcrowd.html"><div class="slist_right"></div></a>
+            </div>
+            
+            <a href="/li1_zcrowd.html"><div class="blist"></div></a>
+            <a href="/li1_zcrowd.html"><div class="blist"></div></a>
+        </div>
+        </section>
+        <footer>
+            <div></div>
+        </footer>
+</div>
+
+
+
+
+
+<!--자바스크립트----------------------------------------->
+
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+
+<script>
+    
+//document.getElementById('nav_work').addEventListener('click',function(){
+//        window.scrollTo(0,680);
+//    });
+//    
+$('#nav_work').on('click', function(){
+        window.scrollTo(0,680);
+    })
+    
+//main_text_animation------------------------
+    
+ consoleText(['Hello','I\'m Jihong.Park', 'I Love What I Do'], 'text',['#333','#333','#333']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+    
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+    
+//main_text_animation_end------------------------
+    
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.blist, .slist_right, .slist_left').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                
+                $(this).animate({'opacity':'1'},5);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+</script>    
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <link rel="stylesheet" href="list1_style.css">
+    <style>
+        
+    @keyframes reverse_blur{
+        from { -webkit-filter: none;
+            filter: none;}
+        to{-webkit-filter: blur(8px);
+            filter: blur(8px);}
+        }
+    
+    @keyframes opacity{
+        from{opacity: 0;}  
+        to{opacity: 1;}  
+        }
+    
+    @keyframes opacity_delay{
+        0%{opacity: 0;}
+        20%{opacity: 0;}
+        100%{opacity: 1;}  
+        }
+        
+    @keyframes nav_longer{
+            from {width : 200px;}
+            to {width : 1200px;}
+        }
+    
+    @keyframes moveRight{
+            from {transform:translateX(-20px);}
+            to {transform:translateX(0px);}
+        }
+        
+    @keyframes moveRight_delay{
+            0%{transform:translateX(-20px);}
+            20%{transform:translateX(-20px);}
+            100%{transform:translateX(0px);}
+        }
+  @keyframes moveLeft{
+            from {transform:translateX(20px);}
+            to {transform:translateX(0px);}
+        }        
+        
+    @keyframes moveUp{
+            from {transform:translateY(50px);}
+            to {transform:translateY(0px);}
+        } 
+        
+    .moveUp{
+        animation: moveUp;  
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+        
+        
+    body{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            letter-spacing: 1px;
+        
+            
+        }
+
+    .container{
+        margin: auto;
+        width: 90%;
+        }
+
+        
+/*--navigation----------------------------------*/
+        
+    #nav_grad{
+        margin-top: 40px;
+        margin-bottom: 13px;
+        height: 14px;
+        width: 100%;
+        background: rgba(255, 180, 126, 73);
+        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        animation: nav_longer, opacity;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+        
+   
+    #nav_menu{
+            position: fixed;
+            color: #333333;
+        }   
+    #nav_menu a {
+        color: #333333;
+        text-decoration: none;
+        transition: all .5s;
+        }
+   #nav_menu input{
+        margin-top: -2px;
+        margin-left: 1070px;
+        border: none;
+        color: #333;
+        background-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        letter-spacing: 1px;
+        float: right; 
+        transition: all .5s;
+        } 
+
+  #nav_menu a:hover{
+        font-style: italic;
+        font-weight: 600;
+        color: #666;
+        background-color: rgba(255, 180, 126, .2);
+    
+    }
+
+   #nav_menu input:hover{
+        font-style: italic;
+        font-weight: 600;
+        color: #666;
+        background-color: rgba(79, 72, 255, .2);
+    
+    }  
+        
+/*-navigationEnd---------------------*/
+        
+    #grad_line{
+        height: 1px;
+        width: 100%;
+        background: rgba(255, 180, 126, 73);
+        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        animation: nav_longer, opacity;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+    
+    header{
+        height: 480px;
+        padding-top: 85px;
+    
+            
+        }
+        
+    #coverimg{
+            position: absolute;
+            top: 70px;
+        height: 700px;
+        z-index: -1;
+        right: 0px;
+        animation: opacity, moveLeft;
+        animation-duration: 2s;
+        clip: rect(0px, 1200px, 562px, 0px);
+    
+        }
+        
+    .title_container{
+            margin-top: 50px;
+        }
+    #title{
+            margin-top: 55px;
+            margin-left: 15px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 55px;
+            display: inline-block;
+            animation : moveRight, opacity;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            
+        }
+        
+        
+    #subtitle1{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 13px;
+            letter-spacing: 9px;
+            line-height: 30px;
+            animation : moveRight_delay, opacity_delay;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+        }
+        
+    #subtitle2{
+            margin-left: 20px;
+            margin-top: 12px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            line-height: 23px;
+            animation : moveRight_delay, opacity_delay;
+            animation-duration: 1.8s;
+            animation-timing-function: ease-in-out;
+        }
+        
+        
+               
+/*footer*/
+                
+    footer{
+            width: 100%;
+            height: 200px;
+            margin-bottom: 80px;
+        }
+    footer .container{
+            display: flex;
+        }
+    footer #prev{
+            width: 600px;
+            height: 200px;
+        }
+    footer #line{
+            margin-top: 20px;
+            width: 1px;
+            height: 160px;
+            background-color: #ccc; 
+        }
+    footer #next{
+            width: 599px;
+            height: 200px;
+        }
+        
+    footer #prev #textarea{
+            margin-top: 70px;
+            float: right;
+            margin-right: 130px;
+            color: #999;
+            transition: all .5s;
+            letter-spacing: 1.5px;
+        }
+    footer #prev #textarea #txt1{
+            font-size: 30px;
+            text-align: right;
+            font-weight: 500;
+        }
+    footer #prev #textarea #txt2{
+            margin-top: 15px;
+            font-size: 16px;
+            text-align: right;
+        }
+     footer #next #textarea{
+            margin-top: 70px;
+            margin-left: 130px;
+            color: #999;
+            transition: all .5s;
+            letter-spacing: 1.5px;
+        }
+    footer #next #textarea #txt1{
+            font-size: 30px;
+            font-weight: 500;
+        }
+    footer #next #textarea #txt2{
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    footer #next #textarea:hover{
+            color: #757575;
+            transform: translateX(5px);
+        }
+    footer #prev #textarea:hover{
+            color: #757575;
+            transform: translateX(-5px);
+        }
+        
+    footer a{
+        text-decoration: none;
+        color: inherit;
+        }
+        
+    </style>
+    
+</head>
+
+
+<body>
+        
+    <div class="container">
+       <div id="bg_grad">
+       </div>
+        <nav>
+            <div id="nav_grad">
+            </div>
+            <div id="nav_menu">
+            <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/index.html" id="jihong">jihong.park</a>
+            <input type="button" value="work" id="nav_work">
+            </div>
+        </nav>
+        <header>
+        <div class="title_container">
+            <div id="title">
+                ZCROWD
+            </div>
+            
+            <div id="subtitle1">
+            SOCIAL IMPACT<br>CROWDFUNDING PLATFORM
+            </div>
+            <div id="subtitle2">
+                    
+ZCROWD proposes new type of invest products.<br>
+By investing those products, People could support<br>
+Socially-valued project and company.
+            </div>
+            
+        </div>
+        <img src="img/zcrowd/coverimg.png" alt="" id="coverimg">
+        </header>
+        <div id="grad_line"></div>
+        
+        
+        
+        
+<!--        contents-->
+       
+       
+       
+<section class="contents">
+       
+       <div id="sec1" class="secdivider">
+           <div class="secdivider_left">
+                <div id="title">
+                TWO SERVICES
+                </div>
+                <div id="txt1">
+                ZCROWD offers two main sevices.<br>
+    Each services has <strong>separate identity</strong> color.
+                </div>
+            </div>
+            <div class="secdivider_right">
+                <div class="colorBox_container">
+                    <div id="color_zblue"><span>DEBT</span></div>
+                    <div id="color_zorange"><span>REWARD</span></div>
+                </div>
+           </div>
+        </div>
+       <div id="sec2" class="secdivider">
+           <div class="secdivider_left">
+                <img src="img/zcrowd/logo.svg" alt="">
+            </div>
+            <div class="secdivider_right">
+                <div id="title">
+                LOGO DESIGN
+                </div>
+                <div id="txt1">
+                ZCZCROWD makes new socially-valued investment culture 
+<br>
+    by connecting two services.
+                </div>
+           </div>
+       </div>
+       <div id="sec3">
+           <div id="title">
+                FLEXIBLE LOGO
+                </div>
+                <div id="txt1">
+                ZCROWD connects two services in diverse ways.
+                </div>
+                <img src="img/zcrowd/flexibleLogo.svg" alt="">
+       </div>
+       <div id="sec4">
+          <div id="bg"></div>
+          <div id="txt1">loading animation</div>
+          <img src="img/zcrowd/loadingAnimation_example.gif" alt="">
+       </div>
+       <div id="sec5">
+           <div id="title">
+                WEB DESIGN
+                </div>
+                <img src="img/zcrowd/webDesign_01.png" id="img01" alt="">
+              <div id="name01">index</div>
+            <div id="txt01">Explain the whole service and expose concept of platform in main banner.
+Introduce both of main services and each main product.</div>
+      
+      <img src="img/zcrowd/webDesign_02.jpg" id="img02" alt="">
+      <div id="name02">introduce<br>service</div>
+            <div id="txt02">Explain the whole service and expose concept of platform in main banner.
+Introduce both of main services and each main product.</div>
+    </div>
+    
+    
+       
+       <div id="sec6">
+           <div id="title">
+                PRODUCT LIST
+            </div>
+            <div id="txt1">Apply different List Layout according to product traits</div>
+            <img src="img/zcrowd/layout_debt.svg" alt="" id="img_layout_debt">
+            <img src="img/zcrowd/layout_reward.svg" alt="" id="img_layout_reward">
+            <div class="layout_caption">
+            <div class="layout_debt_caption">
+                <div id="name">DEBT</div>
+                <div id="txt">Horizontal card layout</div>
+            </div>
+            <div class="layout_reward_caption">
+                <div id="name">REWARD</div>
+                <div id="txt">Flexible vertical Layout </div>
+            </div>
+            </div>
+         <img src="img/zcrowd/webDesign_03.jpg" id="img01" alt="">
+              <div id="name01">index</div>
+            <div id="txt01">Explain the whole service and expose concept of platform in main banner.
+Introduce both of main services and each main product.</div>
+      
+      <img src="img/zcrowd/webDesign_04.jpg" id="img02" alt="">
+      <div id="name02">introduce<br>service</div>
+            <div id="txt02">Explain the whole service and expose concept of platform in main banner.
+Introduce both of main services and each main product.</div>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+        </section>
+        <div id="bg1"></div>
+        <div id="bg2"></div>
+        <div id="bg3"></div>
+        
+<!--        contentsEnd-->
+        <footer>
+           <div id="grad_line"></div>
+           <div class="container">
+            
+           <div id="prev">
+              <a href="li3_aphasia.html">
+               <div id="textarea">
+                   <div id="txt1">PREV PROJECT</div>
+                   <div id="txt2">Aphasia</div>
+                </div>
+                </a>
+           </div>
+            
+           
+           <div id="line"></div>
+           
+        
+           <div id="next">
+              <a href="li2_sodanim.html">
+               <div id="textarea">
+                   <div id="txt1">NEXT PROJECT</div>
+                   <div id="txt2">SODANIM</div>
+                </div>
+                </a>
+           </div>
+        
+           </div>
+           <div id="grad_line"></div> 
+        </footer>
+    </div>
+
+
+
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+
+<script>
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('section div').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                
+                $(this).animate({'opacity':'1'},500).addClass('moveUp',100);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('section img').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                
+                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script>    
+</body>
+</html>

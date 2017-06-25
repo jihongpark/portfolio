@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index_style.css">
+</head>
+
+<body>
+        
+    <div class="container">
+       <div id="bg_grad">
+       </div>
+        <nav>
+            <div id="nav_grad">
+            </div>
+            <div id="nav_menu">
+            <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/index.html" id="jihong">jihong.park</a>
+            <input type="button" value="work" id="nav_work">
+            </div>
+        </nav>
+        <header>
+             
+              <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+            <br>
+            <div id="title_add">
+                MULTI FACATED DESIGNER
+            </div>
+            <div id="subtitle">
+                DESIGN <br>& CODING<br>
+                ILLUSTRATOR<BR>PHOTOSHOP<br>SKETCH<br>
+                HTML&CSS<br>JAVASCRIPt    
+            </div>
+        </header>
+        <section>
+        <div id="title_work">work</div> 
+        <div class="list">
+          <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/li1_zcrowd.html">
+           <div class="blist" id="list1"><img src="img/list1Img.svg" alt=""></div></a>
+           
+            <div class="list_container">
+               
+                <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/li1_zcrowd.html"><div class="slist_left"></div></a>
+                <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/li4_thescreening.html"><div class="slist_right"></div></a>
+            </div>
+            
+            <a href="/li1_zcrowd.html"><div class="blist" id="list4"><img src="img/list4Img.svg" alt=""></div></a>
+        </div>
+        </section>
+        <footer>
+            <div></div>
+        </footer>
+</div>
+
+
+
+
+
+<!--자바스크립트----------------------------------------->
+
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+
+<script>
+    
+//document.getElementById('nav_work').addEventListener('click',function(){
+//        window.scrollTo(0,680);
+//    });
+//    
+$('#nav_work').on('click', function(){
+        window.scrollTo(0,680);
+    })
+    
+//main_text_animation------------------------
+    
+ consoleText(['Hello','I\'m Jihong.Park', 'I Love What I Do'], 'text',['#333','#333','#333']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+    
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+    
+//main_text_animation_end------------------------
+    
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.blist, .slist_right, .slist_left').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                
+                $(this).animate({'opacity':'1'},500).animate({'top': '200px'});
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+</script>    
+</body>
+</html>

@@ -1,0 +1,191 @@
+<html>
+<head>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+   
+    <style>
+    .container{
+        margin: auto;
+        width: 1200px;
+        
+            
+        }
+    body{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            letter-spacing: 1px;
+            background-image: url(img/bg_grad1.png);
+            background-position: 100% 0;
+            background-size: 45% 80%;
+            background-repeat: no-repeat;
+            
+        }
+/*
+    #bg_grad{
+            z-index: -1;
+            width: 600;
+            height: 1000;
+            float: right;
+            background: rgba(255, 180, 126, 73);
+            background: -webkit-linear-gradient(rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+            background: -o-linear-gradient(rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+            background: -moz-linear-gradient(rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+            background: linear-gradient(rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        }
+*/
+    nav{ 
+        position: fixed;
+        } 
+    #nav_grad{
+        margin-top: 40;
+        margin-bottom: 10px;
+        height: 20px;
+        width: 1200px;
+        background: rgba(255, 180, 126, 73);
+        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        }
+    .nav_grad_onload{
+            width: 200px;
+            transition: all 1s;
+        }
+        
+    a {
+        text-decoration: none;
+        color: #333333;
+        
+        }
+        
+    #nav_work{
+        float: right;
+            
+        }
+    header{
+        height: 765px;
+        padding-top: 85px;
+    
+            
+        }
+    #title{
+            margin-top: 300;
+            margin-left: 80;
+            font-weight: 900;
+        letter-spacing: 2px;
+            font-size: 55px;
+            display: inline-block;
+            transition-duration: all 1s;
+        }
+    #title_add{
+          margin-left: 80;
+            margin-top: 30px;
+            font-size: 13px;
+            letter-spacing: 9;
+            display: inline-block;
+        }
+     #subtitle{
+            float : right;
+            margin-top: -200;
+            margin-right: 50;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 50px;
+            color: rgba(200,200,200,0.5);
+            letter-spacing: 4px;
+            mix-blend-mode:multifly;
+            -webkit-filter: blur(10px);
+            filter: blur(10px);
+            display: inline-block;
+            transition: all 1s;
+        }
+        
+        #subtitle:hover{
+            -webkit-filter: none;
+            filter: none;
+        }
+    #title_work{
+            font-size: 30px;
+            text-align: center;
+            font-weight: 800;
+            color: ccc;
+        }
+    #work{
+        width: 1200px;
+        }
+        
+    #ic_arrow{
+        margin-top: 20px;
+        position: relative;
+        left: 48%;
+        margin-right: -48%;
+        display: block;
+        }
+        
+    .list{
+          margin-top: 40px;  
+        }
+    #list1{
+            width: 1200px;
+            height: 500px;
+            background-color: #eee;      
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+   <div id="bg_grad">
+   </div>
+    <nav>
+        <div id="nav_grad";>
+        </div>
+        <a href="opentutorials.org" id="jihong">jihong.park</a>
+        
+        <input type="button" value="work" id="nav_work">
+    </nav>
+    <header>
+        <div id="title">
+            Jihong.Park
+        </div>
+
+        <br>
+        <div id="title_add">
+            MULTI FACATED DESIGNER
+        </div>
+        <div id="subtitle">
+            ENJOY WHAT I<br>
+            DO I LOVE <br>DESIGN & CODING<br>
+            ILLUSTRATOR<BR>PHOTOSHOP<br>SKETCH<br>
+            HTML&CSS<br>JAVASCRIPt    
+        </div>
+    </header>
+    <div id="work">
+         <div id="title_work">work</div> 
+         <img src="img/ic_arrow_down.png" alt="arrow" id="ic_arrow">
+    </div>
+    <div class="list">
+        <div id="list1">
+            
+        </div>
+        
+       
+        
+    </div>
+    
+</div>
+
+
+
+
+<script>
+document.getElementById('nav_work').addEventListener('click',function(){
+        window.scrollTo(0,1500);
+    });
+    
+document.getElementById('jihong').addEventListener('click',function(event){
+        event.preventDefault();
+    });
+</script>    
+</body>
+</html>
