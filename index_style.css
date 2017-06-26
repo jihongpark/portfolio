@@ -93,7 +93,7 @@ html * { margin:0; padding:0; }
         letter-spacing: 1px;
         position: absolute;
         transition: all .5s;
-        right: 0px;
+       right: 0px;
         } 
 
   .nav_menu a:hover{
