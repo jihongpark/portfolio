@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-   <link rel="stylesheet" href="list1_style.css">
+   <link rel="stylesheet" href="list_sodanim_style.css">
     <style>
         
     @keyframes reverse_blur{
@@ -40,22 +40,20 @@
             20%{transform:translateX(-20px);}
             100%{transform:translateX(0px);}
         }
-  @keyframes moveLeft{
+      @keyframes moveLeft{
             from {transform:translateX(20px);}
             to {transform:translateX(0px);}
-        }        
-        
+        }    
     @keyframes moveUp{
             from {transform:translateY(50px);}
             to {transform:translateY(0px);}
-        } 
+        }
         
     .moveUp{
         animation: moveUp;  
         animation-duration: .5s;
         animation-timing-function: ease-in-out;
         }
-        
         
     body{
             font-family: 'Montserrat', sans-serif;
@@ -74,7 +72,7 @@
         
 /*--navigation----------------------------------*/
         
-#nav_grad{
+ #nav_grad{
         margin-top: 40px;
         margin-bottom: 13px;
         height: 14px;
@@ -109,7 +107,9 @@
         font-weight: 200;
         font-size: 14px;
         letter-spacing: 1px;
+        position: absolute;
         transition: all .5s;
+       right: 0px;
         } 
 
   .nav_menu a:hover{
@@ -126,7 +126,7 @@
         color: #666;
         background-color: rgba(79, 72, 255, .2);
     
-    } 
+    }  
         
 /*-navigationEnd---------------------*/
         
@@ -152,18 +152,18 @@
         
     #coverimg{
             position: absolute;
-            top: 70px;
-        height: 700px;
+            top: 72px;
+        height: 900px;
         z-index: -1;
-        right: 0px;
+        right: 20px;
         animation: opacity, moveLeft;
         animation-duration: 2s;
-        clip: rect(0px, 1200px, 562px, 0px);
+        clip: rect(0px, 1200px, 560px, 0px);
     
         }
         
     .title_container{
-            margin-top: 50px;
+            margin-top: 60px;
         }
     #title{
             margin-top: 55px;
@@ -214,17 +214,17 @@
             display: flex;
         }
     footer #prev{
-            width: 600px;
+            width: 49.5%;
             height: 200px;
         }
     footer #line{
             margin-top: 20px;
-            width: 1px;
+            width: 0.05em;
             height: 160px;
             background-color: #ccc; 
         }
     footer #next{
-            width: 599px;
+            width: 49.5%;
             height: 200px;
         }
         
@@ -275,6 +275,7 @@
         color: inherit;
         }
         
+        
     </style>
     
 </head>
@@ -297,24 +298,27 @@
             </div>
             </div>
         </nav>
+        
+<!--        header-->
+       
         <header>
         <div class="title_container">
             <div id="title">
-                ZCROWD
+                SODANIM
             </div>
             
             <div id="subtitle1">
-            SOCIAL IMPACT<br>CROWDFUNDING PLATFORM
+            Service for Finding <br>new friends in travel
             </div>
             <div id="subtitle2">
                     
-ZCROWD proposes new type of invest products.<br>
-By investing those products, People could support<br>
-Socially-valued project and company.
+SODANIM is Service for everyone<br>
+who dreams to meet 
+new friends while traveling
             </div>
             
         </div>
-        <img src="img/zcrowd/coverimg.png" alt="" id="coverimg">
+        <img src="img/sodanim/coverimg.svg" alt="" id="coverimg">
         </header>
         <div id="grad_line"></div>
         
@@ -325,144 +329,135 @@ Socially-valued project and company.
        
        
        
-<section class="contents">
+        <section class="contents">
        
-       <div id="sec1" class="secdivider">
-           <div class="secdivider_left">
+       <div id="sec1">
                 <div id="title">
-                TWO SERVICES
+                CHARACTERS
                 </div>
                 <div id="txt1">
-                ZCROWD offers two main sevices.<br>
-    Each services has <strong>separate identity</strong> color.
+                There are Four characters according to How much they are active when they travel.
+                </div>
+                <img src="img/sodanim/arrow.svg" alt="" id="img_arrow">
+                <div class="arrow_caption_container">
+                    <div id="left">inactive</div>
+                    <div id="right">active</div>
+                </div>
+                <div class="character_container">
+                <img src="img/sodanim/sloth.gif" alt="" id="img_sloth">
+                <img src="img/sodanim/cat.gif" alt="" id="img_cat">
+                <img src="img/sodanim/dog.gif" alt="" id="img_dog">
+                <img src="img/sodanim/monky.gif" alt="" id="img_monky">
+                </div>
+                <div class="character_caption_container">
+                <img src="img/sodanim/caption_lazysloth.png">
+                <img src="img/sodanim/caption_loftycat.png">
+                <img src="img/sodanim/caption_roamdog.png">
+                <img src="img/sodanim/caption_madmonky.png">
                 </div>
             </div>
-            <div class="secdivider_right">
-                <div class="colorBox_container">
-                    <div id="color_zblue"><span>DEBT</span></div>
-                    <div id="color_zorange"><span>REWARD</span></div>
-                </div>
-           </div>
+
+
+       <div id="sec2">
+        <div id="title">
+                ICON
+            </div>
+            <div id="txt1">
+                There are Nine travel activity icons.<br>
+Users can select the icons that they like<br>
+When they sign up the service.<br>
         </div>
-       <div id="sec2" class="secdivider">
-           <div class="secdivider_left">
-                <img src="img/zcrowd/logo.svg" alt="">
-            </div>
-            <div class="secdivider_right">
-                <div id="title">
-                LOGO DESIGN
-                </div>
-                <div id="txt1">
-                ZCZCROWD makes new socially-valued investment culture 
-<br>
-    by connecting two services.
-                </div>
-           </div>
+        <div class="icon_container">
+         <div class="icon_container_1">
+             <div id="1x1"></div>
+             <div id="1x2"></div>
+             <div id="1x3"><img src="img/sodanim/icon_concert.png" alt=""></div>
+             <div id="1x4"><img src="img/sodanim/icon_drink.png" alt=""></div>
+        </div>
+        <div class="icon_container_2">
+             <div id="2x1"></div>
+             <div id="2x2"><img src="img/sodanim/icon_museum.png" alt=""></div>
+             <div id="2x3"><img src="img/sodanim/icon_sports.png" alt=""></div>
+             <div id="2x4"><img src="img/sodanim/icon_nature.png" alt=""></div>
+        </div>
+        <div class="icon_container_3">
+             <div id="3x1"><img src="img/sodanim/icon_chiling.png" alt=""></div>
+             <div id="3x2"><img src="img/sodanim/icon_camera.png" alt=""></div>
+             <div id="3x3"><img src="img/sodanim/icon_club.png" alt=""></div>
+             <div id="3x4"><img src="img/sodanim/icon_food.png" alt=""></div>
+         </div>
+        </div>
+         <img src="img/sodanim/icon_grid_all.svg" alt="" id="icon_grid">
        </div>
+    
        <div id="sec3">
            <div id="title">
-                FLEXIBLE LOGO
+                APP DESIGN
                 </div>
-                <div id="txt1">
-                ZCROWD connects two services in diverse ways.
-                </div>
-                <img src="img/zcrowd/flexibleLogo.svg" alt="">
-       </div>
-       <div id="sec4">
-          <div id="bg"></div>
-          <div id="txt1">loading animation</div>
-          <img src="img/zcrowd/loadingAnimation_example.gif" alt="">
-       </div>
-       <div id="sec5">
-           <div id="title">
-                WEB DESIGN
-                </div>
-                <img src="img/zcrowd/webDesign_01.png" id="img01" alt="">
-              <div id="name01">index</div>
-            <div id="txt01">Explain the whole service and expose concept of platform in main banner.
-Introduce both of main services and each main product.</div>
+                <img src="img/sodanim/app_signup.gif" id="img01" alt="">
+              <div id="name01">Sign up</div>
+            <div id="txt01">Users can select the travel icon and character that matches their travel style When sign up.</div>
       
-      <img src="img/zcrowd/webDesign_02.jpg" id="img02" alt="">
-      <div id="name02">introduce<br>service</div>
-            <div id="txt02">Explain the whole service and expose concept of platform in main banner.
-Introduce both of main services and each main product.</div>
+      <img src="img/sodanim/app_writeboard.gif" id="img02" alt="">
+      <div id="name02">write a board</div>
+            <div id="txt02">Users can see all the travelers and theirs needs around oneself in realtime. ALso inform one's needs to other travelers.</div>
     </div>
     
     
        
-       <div id="sec6">
-           <div id="title">
-                PRODUCT LIST
+       <div id="sec4">
+          <img src="img/sodanim/reflet_mockup_bg.png" id="refletBg" alt="">
+          <div id="refletImgBox">
+          <img src="img/sodanim/reflet_mockup.png" id="refletImg" alt="">
+          </div>
+          <div id="smallTitle">BROCHURE DESIGN</div>
+          
+           <div id="bigTitle">
+                VERY SUBJECTIVE<br>TRAVEL TIP
             </div>
-            <div id="txt1">Apply different List Layout according to product traits</div>
-            <img src="img/zcrowd/layout_debt.svg" alt="" id="img_layout_debt">
-            <img src="img/zcrowd/layout_reward.svg" alt="" id="img_layout_reward">
-            <div class="layout_caption">
-            <div class="layout_debt_caption">
-                <div id="name">DEBT</div>
-                <div id="txt">Horizontal card layout</div>
-            </div>
-            <div class="layout_reward_caption">
-                <div id="name">REWARD</div>
-                <div id="txt">Flexible vertical Layout </div>
-            </div>
-            </div>
-         <img src="img/zcrowd/webDesign_03.jpg" id="img01" alt="">
-              <div id="name01">index</div>
-            <div id="txt01">Explain the whole service and expose concept of platform in main banner.
-Introduce both of main services and each main product.</div>
-      
-      <img src="img/zcrowd/webDesign_04.jpg" id="img02" alt="">
-      <div id="name02">introduce<br>service</div>
-            <div id="txt02">Explain the whole service and expose concept of platform in main banner.
-Introduce both of main services and each main product.</div>
+            <div id="txt1">Show each characters travel traits<br>
+by each character’s brouchure design.</div>
+            <img src="img/sodanim/reflet_all.png" id="reflet_all" alt="">
        </div>
+        <div id="sec5">
+            <div id="title">
+                FINAL DISPLAY
+                </div>
+                <img src="img/sodanim/finalDisplay_2x.png" alt="">
+            
+        </div>
        
+        </section>       
        
-       
-       
-       
-       
-       
-       
-        </section>
-        <div id="bg1"></div>
+       <div id="bg1"></div>
         <div id="bg2"></div>
         <div id="bg3"></div>
+
+        
+        
         
 <!--        contentsEnd-->
         <footer>
            <div id="grad_line"></div>
-           <div class="container">
-            
+           <div class="container"> 
            <div id="prev">
-              <a href="li3_aphasia.html">
                <div id="textarea">
                    <div id="txt1">PREV PROJECT</div>
                    <div id="txt2">Aphasia</div>
                 </div>
-                </a>
            </div>
-            
-           
            <div id="line"></div>
-           
-        
            <div id="next">
-              <a href="li2_sodanim.html">
                <div id="textarea">
                    <div id="txt1">NEXT PROJECT</div>
                    <div id="txt2">SODANIM</div>
                 </div>
-                </a>
            </div>
-        
            </div>
            <div id="grad_line"></div> 
         </footer>
-    </div>
 
-
+  </div>
 
 <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 
@@ -482,7 +477,7 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object){
                 
-                $(this).animate({'opacity':'1'},500).addClass('moveUp',100);
+                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
                     
             }
             
@@ -499,15 +494,38 @@ $(document).ready(function() {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('section img').each( function(i){
+        $('#sec3 img').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object){
-                
                 $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.icon_container img').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                $(this).addClass('bounceIn',500);
                     
             }
             

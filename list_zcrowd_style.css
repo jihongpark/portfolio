@@ -1,5 +1,5 @@
 #sec1{
-    width: 1200px;
+    width: 100%;
     height: 600px;  
     opacity: 0;
 }
@@ -192,7 +192,7 @@ margin-left: 250px;
 
 #sec5 #img01{
     margin-top: 140px;
-    width: 900px;
+    width: 90%;
     margin-left: -200px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
     float: left;
@@ -211,16 +211,16 @@ margin-left: 250px;
 
 #sec5 #txt01{
     display: inline-block;
-    width: 300px;
+    width: 18em;
     line-height: 1.8;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 3em;
+    margin-top: 3em;
     opacity: 0;
 }
 
 #sec5 #img02{
     margin-top: 100px;
-    width: 900px;
+    width: 90%;
     margin-right: -200px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
     float: right;
@@ -228,7 +228,7 @@ margin-left: 250px;
 }
 
 #sec5 #name02{
-    margin-top: 800px;
+    margin-top: 20em;
     color : #ccc;
     font-weight: 900;
     font-size: 48px;
@@ -241,18 +241,17 @@ margin-left: 250px;
 
 #sec5 #txt02{
     display: inline-block;
-    width: 300px;
+    width: 18em;
     line-height: 1.8;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 500px;
+    margin-right: 3em;
+    margin-top: 3em;
     opacity: 0;
 }
 
 #bg3{
     z-index: -1;
     position: absolute;
-    top:5400px;
+    top:5750px;
     left: 0px;
     height: 2150px;
     width: 100%;
@@ -284,9 +283,16 @@ margin-left: 250px;
     opacity: 0;
 }
 
+
+#sec6 #img_layout_debt{
+    opacity: 0;
+    width: 49%
+    
+}
 #sec6 #img_layout_reward{
     opacity: 0;
     float: right;
+    width: 49%;
 }
 
 
@@ -297,7 +303,7 @@ margin-left: 250px;
     opacity: 0;
 }
 .layout_debt_caption{
-    width: 47%;
+    width: 100%;
     opacity: 0;
 }
 
@@ -321,6 +327,7 @@ margin-left: 250px;
 .layout_reward_caption{
     margin-left: 80px;
     opacity: 0;
+    width: 100%;
 }
 
 .layout_reward_caption #name{
@@ -333,7 +340,6 @@ margin-left: 250px;
 }
 
 .layout_reward_caption #txt{
-    width: 590px;
     color: #333;
     font-size: 14px;
     text-align: center;
@@ -343,7 +349,7 @@ margin-left: 250px;
 
 #sec6 #img01{
     margin-top: 100px;
-    width: 900px;
+    width: 90%;
     margin-left: -200px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
     float: left;
@@ -362,16 +368,16 @@ margin-left: 250px;
 
 #sec6 #txt01{
     display: inline-block;
-    width: 300px;
+    width: 18em;
     line-height: 1.8;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 3em;
+    margin-top: 3em;
     opacity: 0;
 }
 
 #sec6 #img02{
     margin-top: 100px;
-    width: 900px;
+    width: 90%;
     margin-right: -200px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
     float: right;
@@ -380,7 +386,7 @@ margin-left: 250px;
 
 #sec6 #name02{
     margin-top: 800px;
-    color : #ccc
+    color : #ccc;
     font-weight: 900;
     font-size: 48px;
     letter-spacing: 3px;
@@ -392,10 +398,11 @@ margin-left: 250px;
 
 #sec6 #txt02{
     display: inline-block;
-    width: 300px;
+    width: 18em;
     line-height: 1.8;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-bottom: 700px;
+    margin-left: 3em;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-bottom: 70em;
     opacity: 0;
 }

@@ -227,23 +227,23 @@
     
 #list1 img{
     margin-left: -5em;
-    height: 20em;
+    height: auto;
     width: 200%;
 
 }
 
 .slist_right img{
-    height: 21em;
+    height: auto;
     width: 100%;
 }
 
 .slist_left img{
-    height: 22em;
+    height: auto;
   width: 100%;
 }
 
 #list4 img{
-    height: 20em;
+    height: auto;
     width: 200%;
     background-color: #FFFBBF;
     
@@ -278,8 +278,7 @@
             transform: translateY(-3px);
                
         }
-    
-    ----
+}
     
     
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-   <link rel="stylesheet" href="list2_style.css">
+   <link rel="stylesheet" href="list_screening_style.css">
     <style>
         
     @keyframes reverse_blur{
@@ -71,8 +71,7 @@
 
         
 /*--navigation----------------------------------*/
-        
- #nav_grad{
+    #nav_grad{
         margin-top: 40px;
         margin-bottom: 13px;
         height: 14px;
@@ -125,8 +124,7 @@
         font-weight: 600;
         color: #666;
         background-color: rgba(79, 72, 255, .2);
-    
-    }  
+        }
         
 /*-navigationEnd---------------------*/
         
@@ -151,14 +149,14 @@
         }
         
     #coverimg{
-            position: absolute;
-            top: 72px;
-        height: 900px;
+        position: absolute;
+        top: -70px;
+        height: 850px;
         z-index: -1;
-        right: 20px;
+        right: 0px;
         animation: opacity, moveLeft;
         animation-duration: 2s;
-        clip: rect(0px, 1200px, 560px, 0px);
+        clip: rect(0px, 1500px, 780px, 140px);
     
         }
         
@@ -214,17 +212,17 @@
             display: flex;
         }
     footer #prev{
-            width: 600px;
+            width: 49.5%;
             height: 200px;
         }
     footer #line{
             margin-top: 20px;
-            width: 1px;
+            width: 0.05em;
             height: 160px;
             background-color: #ccc; 
         }
     footer #next{
-            width: 599px;
+            width: 49.5%;
             height: 200px;
         }
         
@@ -270,7 +268,10 @@
             transform: translateX(-5px);
         }
         
-        
+    footer a{
+        text-decoration: none;
+        color: inherit;
+        }
         
     </style>
     
@@ -280,8 +281,6 @@
 <body>
         
     <div class="container">
-       <div id="bg_grad">
-       </div>
         <nav>
             <div id="nav_grad">
             </div>
@@ -300,137 +299,122 @@
         <header>
         <div class="title_container">
             <div id="title">
-                SODANIM
+             Sreening 2015
             </div>
             
             <div id="subtitle1">
-            Service for Finding <br>new friends in travel
+            VIDEO ART BOOKLET
             </div>
             <div id="subtitle2">
-                    
-SODANIM is Service for everyone<br>
-who dreams to meet 
-new friends while traveling
+            screening 2015 introduces 5 hot vidieo artist and their art.<br>
+            Critic criticize their artwork.
             </div>
             
         </div>
-        <img src="img/sodanim/coverimg.svg" alt="" id="coverimg">
+        <img src="img/screening2015/coverimg.png" alt="" id="coverimg">
         </header>
         <div id="grad_line"></div>
-        
-        
-        
-        
+                
 <!--        contents-->
        
-       
-       
-        <section class="contents">
-       
-       <div id="sec1">
-                <div id="title">
-                CHARACTERS
+       <section>
+           
+           <div id="sec1">
+              <div id="title">
+                COLORS
                 </div>
                 <div id="txt1">
-                There are Four characters according to How much they are active when they travel.
+                Assign each individual color to each Artist.
                 </div>
-                <img src="img/sodanim/arrow.svg" alt="" id="img_arrow">
-                <div class="arrow_caption_container">
-                    <div id="left">inactive</div>
-                    <div id="right">active</div>
-                </div>
-                <div class="character_container">
-                <img src="img/sodanim/sloth.gif" alt="" id="img_sloth">
-                <img src="img/sodanim/cat.gif" alt="" id="img_cat">
-                <img src="img/sodanim/dog.gif" alt="" id="img_dog">
-                <img src="img/sodanim/monky.gif" alt="" id="img_monky">
-                </div>
-                <div class="character_caption_container">
-                <img src="img/sodanim/caption_lazysloth.png">
-                <img src="img/sodanim/caption_loftycat.png">
-                <img src="img/sodanim/caption_roamdog.png">
-                <img src="img/sodanim/caption_madmonky.png">
-                </div>
+                <div class="divider">
+                    
+                    <div>
+                       <div id="color1"></div>
+                        Jisong Lee
+                    </div>
+                    <div>
+                        <div id="color2"></div>
+                         Ayoung Kim
+                    </div>
+                    <div>
+                       <div id="color3"></div>
+                        Kyungkun Park
+                    </div>
+                    <div>
+                       <div id="color4"></div>
+                        Kiwoun Shin
+                    </div>
+                    <div>
+                       <div id="color5"></div>
+                        Sung Rok Choi
+                    </div>
+                    
+                </div> 
             </div>
-
-
-       <div id="sec2">
-        <div id="title">
-                ICON
-            </div>
-            <div id="txt1">
-                There are Nine travel activity icons.<br>
-Users can select the icons that they like<br>
-When they sign up the service.<br>
-        </div>
-        <div class="icon_container">
-         <div class="icon_container_1">
-             <div id="1x1"></div>
-             <div id="1x2"></div>
-             <div id="1x3"><img src="img/sodanim/icon_concert.png" alt=""></div>
-             <div id="1x4"><img src="img/sodanim/icon_drink.png" alt=""></div>
-        </div>
-        <div class="icon_container_2">
-             <div id="2x1"></div>
-             <div id="2x2"><img src="img/sodanim/icon_museum.png" alt=""></div>
-             <div id="2x3"><img src="img/sodanim/icon_sports.png" alt=""></div>
-             <div id="2x4"><img src="img/sodanim/icon_nature.png" alt=""></div>
-        </div>
-        <div class="icon_container_3">
-             <div id="3x1"><img src="img/sodanim/icon_chiling.png" alt=""></div>
-             <div id="3x2"><img src="img/sodanim/icon_camera.png" alt=""></div>
-             <div id="3x3"><img src="img/sodanim/icon_club.png" alt=""></div>
-             <div id="3x4"><img src="img/sodanim/icon_food.png" alt=""></div>
-         </div>
-        </div>
-         <img src="img/sodanim/icon_grid_all.svg" alt="" id="icon_grid">
-       </div>
-    
-       <div id="sec3">
-           <div id="title">
-                APP DESIGN
+           
+            <div id="sec2">
+              <div id="title">
+                4 COLUMN GRID
                 </div>
-                <img src="img/sodanim/app_signup.gif" id="img01" alt="">
-              <div id="name01">Sign up</div>
-            <div id="txt01">Users can select the travel icon and character that matches their travel style When sign up.</div>
-      
-      <img src="img/sodanim/app_writeboard.gif" id="img02" alt="">
-      <div id="name02">write a board</div>
-            <div id="txt02">Users can see all the travelers and theirs needs around oneself in realtime. ALso inform one's needs to other travelers.</div>
-    </div>
-    
-    
-       
-       <div id="sec4">
-          <img src="img/sodanim/reflet_mockup_bg.png" id="refletBg" alt="">
-          <div id="refletImgBox">
-          <img src="img/sodanim/reflet_mockup.png" id="refletImg" alt="">
-          </div>
-          <div id="smallTitle">BROCHURE DESIGN</div>
-          
-           <div id="bigTitle">
-                VERY SUBJECTIVE<br>TRAVEL TIP
+                <div id="txt1">
+                Based on 4 column grid, the layout was modified slightly to accommodate each chapter.
+                </div>
+                <img src="img/screening2015/column01.png" alt="">
+                <img src="img/screening2015/column02.png" alt="">
+                
             </div>
-            <div id="txt1">Show each characters travel traits<br>
-by each character’s brouchure design.</div>
-            <img src="img/sodanim/reflet_all.png" id="reflet_all" alt="">
-       </div>
-        <div id="sec5">
+           
+           <div id="sec3">
             <div id="title">
-                FINAL DISPLAY
-                </div>
-                <img src="img/sodanim/finalDisplay_2x.png" alt="">
+                OTHER PAGES
+            </div>
+            <div id="txt01" class="caption">
+                 Cover - <span>Sung Rok Choi</span>
+            </div>
+            <img src="img/screening2015/page01_cover.png"  id="img01">
             
-        </div>
+             <div id="txt02" class="caption">
+                 CV, Critic - <span>Sung Rok Choi</span>
+            </div>
+            <img src="img/screening2015/page02_CV.png"  id="img02">
+            
+             <div id="txt03" class="caption">
+                 Critic - <span>Sung Rok Choi</span>
+            </div>
+            <img src="img/screening2015/page03_Critic.png"  id="img03">
+            
+            <div id="txt04" class="caption">
+                 Interview - <span>Ayoung Kim</span>
+            </div>
+            <img src="img/screening2015/page04_Interview.png"  id="img04">
+            
+            <div id="txt05" class="caption">
+                 Cover - <span>Ki Woun Shin</span>
+            </div>
+            <img src="img/screening2015/page05_cover.png"  id="img05">
+               
+            <div id="txt06" class="caption">
+                 CV, Critic - <span>Ki Woun Shin</span>
+            </div>
+            <img src="img/screening2015/page06_cv.png"  id="img06">
+            
+            
+             </div>
+              
+              
+               
+           
+           
+           
+           
+           
+           
+           
+           
+       </section>
        
-        </section>       
-       
-       <div id="bg1"></div>
-        <div id="bg2"></div>
-        <div id="bg3"></div>
-
-        
-        
+          <div id="bg1"></div>
+          <div id="bg2"></div>
         
 <!--        contentsEnd-->
         <footer>
@@ -453,7 +437,7 @@ by each character’s brouchure design.</div>
            <div id="grad_line"></div> 
         </footer>
 
-  </div>
+  </div> 
 
 <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 

@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-   <link rel="stylesheet" href="list3_style.css">
+   <link rel="stylesheet" href="list_zcrowd_style.css">
+   <link rel="stylesheet" href="list_zcrowd_mobile_style.css">
     <style>
         
     @keyframes reverse_blur{
@@ -40,20 +41,22 @@
             20%{transform:translateX(-20px);}
             100%{transform:translateX(0px);}
         }
-      @keyframes moveLeft{
+  @keyframes moveLeft{
             from {transform:translateX(20px);}
             to {transform:translateX(0px);}
-        }    
+        }        
+        
     @keyframes moveUp{
             from {transform:translateY(50px);}
             to {transform:translateY(0px);}
-        }
+        } 
         
     .moveUp{
         animation: moveUp;  
         animation-duration: .5s;
         animation-timing-function: ease-in-out;
         }
+        
         
     body{
             font-family: 'Montserrat', sans-serif;
@@ -72,7 +75,7 @@
         
 /*--navigation----------------------------------*/
         
-  #nav_grad{
+#nav_grad{
         margin-top: 40px;
         margin-bottom: 13px;
         height: 14px;
@@ -107,9 +110,7 @@
         font-weight: 200;
         font-size: 14px;
         letter-spacing: 1px;
-        position: absolute;
         transition: all .5s;
-       right: 0px;
         } 
 
   .nav_menu a:hover{
@@ -152,21 +153,22 @@
         
     #coverimg{
             position: absolute;
-            top: 100px;
-        height: 500px;
+            top: 70px;
+        height: 700px;
         z-index: -1;
-        right: 200px;
+        right: 0px;
         animation: opacity, moveLeft;
         animation-duration: 2s;
+        clip: rect(0px, 1200px, 562px, 0px);
     
         }
         
     .title_container{
-            margin-top: 60px;
+            margin-top: 50px;
         }
     #title{
             margin-top: 55px;
-            margin-left: 80px;
+            margin-left: 15px;
             font-weight: 900;
             letter-spacing: 2px;
             font-size: 55px;
@@ -179,7 +181,7 @@
         
         
     #subtitle1{
-            margin-left: 80px;
+            margin-left: 20px;
             margin-top: 20px;
             font-size: 13px;
             letter-spacing: 9px;
@@ -190,7 +192,7 @@
         }
         
     #subtitle2{
-            margin-left: 80px;
+            margin-left: 20px;
             margin-top: 12px;
             font-size: 12px;
             letter-spacing: 2px;
@@ -213,17 +215,17 @@
             display: flex;
         }
     footer #prev{
-            width: 600px;
+            width: 49.5%;
             height: 200px;
         }
     footer #line{
             margin-top: 20px;
-            width: 1px;
+            width: 0.05em;
             height: 160px;
             background-color: #ccc; 
         }
     footer #next{
-            width: 599px;
+            width: 49.5%;
             height: 200px;
         }
         
@@ -269,7 +271,10 @@
             transform: translateX(-5px);
         }
         
-        
+    footer a{
+        text-decoration: none;
+        color: inherit;
+        }
         
     </style>
     
@@ -279,6 +284,8 @@
 <body>
         
     <div class="container">
+       <div id="bg_grad">
+       </div>
         <nav>
             <div id="nav_grad">
             </div>
@@ -291,150 +298,172 @@
             </div>
             </div>
         </nav>
-        
-<!--        header-->
-       
         <header>
         <div class="title_container">
             <div id="title">
-            aphasia
+                ZCROWD
             </div>
             
             <div id="subtitle1">
-            Virtual graphic design studio
+            SOCIAL IMPACT<br>CROWDFUNDING PLATFORM
             </div>
             <div id="subtitle2">
-            screening 2015 introduces 5 hot vidieo artist and their art.<br>
-            Critic criticize their artwork.
+                    
+ZCROWD proposes new type of invest products.<br>
+By investing those products, People could support<br>
+Socially-valued project and company.
             </div>
             
         </div>
-        <img src="img/aphasia/coverimg.png"  id="coverimg">
+        <img src="img/zcrowd/coverimg.png" alt="" id="coverimg">
         </header>
         <div id="grad_line"></div>
-                
+        
+        
+        
+        
 <!--        contents-->
        
-       <section>
-            <div id="sec1">
-               Aphasia is a  virtual Design Studio.<br>
-Aphasia means a medical condition that makes a person unable to speak,<br> 
-or understand speech or writing because of damage to the brain.<br>
-Aphasia Design Studio  try to  impress  people only by “visual  things” without any word.
-               
-           </div>
-            <div id="sec2">
-              <div id="title">Logo starts from lip.
-                </div>
-                
-                <img src="img/aphasia/startFromLip.png" alt="">
-               
-                
-            </div>
-            <div id="line1"></div>
-            <div id="sec3">
-              <div id="title">
-                PROCESS
-                </div>
-            
-                <div class="divider">
-                    
-                 
-                       <div id="process1">
-                           <img src="img/aphasia/process1.png" alt="">
-                       </div>
-                  
-                        <div id="process2">
-                            <img src="img/aphasia/process2.png" alt="">
-                        </div>
-                      
-    
-                       <div id="process3">
-                           <img src="img/aphasia/process3.png" alt="">
-                       </div>
-                       
-             
-                       <div id="process4">
-                           <img src="img/aphasia/process4.png" alt="">
-                       </div>
-                        
-            
-                    
-                </div> 
-            </div>
-            <div id="sec4">
-                <div id="title">
-                COLOR CODE
-                </div>
-               <div class="colorContainer">
-                  <div id="color1">
-                       <div id="pinkColor"></div>
-                       <span>pink</span><br>
-                       #DC5E60
-                   </div>
-                   <div id="color2">
-                       <div id="greenColor"></div>
-                       <span>green</span><br>
-                       #DC5E60
-                   </div>
-                   
-               </div>
-               
-               
-               
-           </div>
-            <div id="sec5">
-                <div id="title">
-               VARIATION
-                </div>
-                <div class="variationContainer">
-                   <div id="vari01"><img src="img/aphasia/variation2.png" alt=""></div> 
-                   <div id="vari02"><img src="img/aphasia/variation1.png" alt=""></div>
-                </div>
-                <div class="variationContainer">
-                   <div id="vari03"><img src="img/aphasia/variation3.png" alt=""></div>
-                   <div id="vari04">
-                       <img src="img/aphasia/variation4.png" alt="">
-                   </div>
-                </div>  
-                
-           </div>
-            <div id="sec6"></div>
-           
-    
-           
-           
-           
-           
-           
-       </section>
        
-          <div id="bg1"></div>
-          <div id="bg2"></div>
-          <div id="bg3"><img src="img/aphasia/application.png" alt=""></div>
+       
+<section class="contents">
+       
+       <div id="sec1" class="secdivider">
+           <div class="secdivider_left">
+                <div id="title">
+                TWO SERVICES
+                </div>
+                <div id="txt1">
+                ZCROWD offers two main sevices.<br>
+    Each services has <strong>separate identity</strong> color.
+                </div>
+            </div>
+            <div class="secdivider_right">
+                <div class="colorBox_container">
+                    <div id="color_zblue"><span>DEBT</span></div>
+                    <div id="color_zorange"><span>REWARD</span></div>
+                </div>
+           </div>
+        </div>
+       <div id="sec2" class="secdivider">
+           <div class="secdivider_left">
+                <img src="img/zcrowd/logo.svg" alt="">
+            </div>
+            <div class="secdivider_right">
+                <div id="title">
+                LOGO DESIGN
+                </div>
+                <div id="txt1">
+                ZCZCROWD makes new socially-valued investment culture 
+<br>
+    by connecting two services.
+                </div>
+           </div>
+       </div>
+       <div id="sec3">
+           <div id="title">
+                FLEXIBLE LOGO
+                </div>
+                <div id="txt1">
+                ZCROWD connects two services in diverse ways.
+                </div>
+                <img src="img/zcrowd/flexibleLogo.svg" alt="">
+       </div>
+       <div id="sec4">
+          <div id="bg"></div>
+          <div id="txt1">loading animation</div>
+          <img src="img/zcrowd/loadingAnimation_example.gif" alt="">
+       </div>
+       <div id="sec5">
+           <div id="title">
+                WEB DESIGN
+                </div>
+                <img src="img/zcrowd/webDesign_01.png" id="img01" alt="">
+              <div id="name01">index</div>
+            <div id="txt01">Explain the whole service and expose concept of platform in main banner.
+Introduce both of main services and each main product.</div>
+      
+      <img src="img/zcrowd/webDesign_02.jpg" id="img02" alt="">
+      <div id="name02">introduce<br>service</div>
+            <div id="txt02">Explain the whole service and expose concept of platform in main banner.
+Introduce both of main services and each main product.</div>
+    </div>
+    
+    
+       
+       <div id="sec6">
+           <div id="title">
+                PRODUCT LIST
+            </div>
+            <div id="txt1">Apply different List Layout according to product traits</div>
+            <img src="img/zcrowd/layout_debt.svg" alt="" id="img_layout_debt">
+            <img src="img/zcrowd/layout_reward.svg" alt="" id="img_layout_reward">
+            <div class="layout_caption">
+            <div class="layout_debt_caption">
+                <div id="name">DEBT</div>
+                <div id="txt">Horizontal card layout</div>
+            </div>
+            <div class="layout_reward_caption">
+                <div id="name">REWARD</div>
+                <div id="txt">Flexible vertical Layout </div>
+            </div>
+            </div>
+         <img src="img/zcrowd/webDesign_03.jpg" id="img01" alt="">
+              <div id="name01">index</div>
+            <div id="txt01">Explain the whole service and expose concept of platform in main banner.
+Introduce both of main services and each main product.</div>
+      
+      <img src="img/zcrowd/webDesign_04.jpg" id="img02" alt="">
+      <div id="name02">introduce<br>service</div>
+            <div id="txt02">Explain the whole service and expose concept of platform in main banner.
+Introduce both of main services and each main product.</div>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+        </section>
+        <div id="bg1"></div>
+        <div id="bg2"></div>
+        <div id="bg3"></div>
         
 <!--        contentsEnd-->
         <footer>
            <div id="grad_line"></div>
-           <div class="container"> 
+           <div class="container">
+            
            <div id="prev">
+              <a href="li3_aphasia.html">
                <div id="textarea">
                    <div id="txt1">PREV PROJECT</div>
                    <div id="txt2">Aphasia</div>
                 </div>
+                </a>
            </div>
+            
+           
            <div id="line"></div>
+           
+        
            <div id="next">
+              <a href="li2_sodanim.html">
                <div id="textarea">
                    <div id="txt1">NEXT PROJECT</div>
                    <div id="txt2">SODANIM</div>
                 </div>
+                </a>
            </div>
+        
            </div>
            <div id="grad_line"></div> 
         </footer>
+    </div>
 
-  </div> 
+
 
 <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 
@@ -454,7 +483,7 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object){
                 
-                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
+                $(this).animate({'opacity':'1'},500).addClass('moveUp',100);
                     
             }
             
@@ -471,13 +500,14 @@ $(document).ready(function() {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('img').each( function(i){
+        $('section img').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object){
+                
                 $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
                     
             }
@@ -487,7 +517,6 @@ $(document).ready(function() {
     });
     
 });
-
 </script>    
 </body>
 </html>

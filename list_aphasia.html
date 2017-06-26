@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-   <link rel="stylesheet" href="list4_style.css">
+   <link rel="stylesheet" href="list_aphasia_style.css">
     <style>
         
     @keyframes reverse_blur{
@@ -71,7 +71,8 @@
 
         
 /*--navigation----------------------------------*/
-    #nav_grad{
+        
+  #nav_grad{
         margin-top: 40px;
         margin-bottom: 13px;
         height: 14px;
@@ -124,7 +125,8 @@
         font-weight: 600;
         color: #666;
         background-color: rgba(79, 72, 255, .2);
-        }
+    
+    } 
         
 /*-navigationEnd---------------------*/
         
@@ -149,14 +151,13 @@
         }
         
     #coverimg{
-        position: absolute;
-        top: -70px;
-        height: 850px;
+            position: absolute;
+            top: 100px;
+        height: 500px;
         z-index: -1;
-        right: 0px;
+        right: 200px;
         animation: opacity, moveLeft;
         animation-duration: 2s;
-        clip: rect(0px, 1500px, 780px, 140px);
     
         }
         
@@ -165,7 +166,7 @@
         }
     #title{
             margin-top: 55px;
-            margin-left: 15px;
+            margin-left: 80px;
             font-weight: 900;
             letter-spacing: 2px;
             font-size: 55px;
@@ -178,7 +179,7 @@
         
         
     #subtitle1{
-            margin-left: 20px;
+            margin-left: 80px;
             margin-top: 20px;
             font-size: 13px;
             letter-spacing: 9px;
@@ -189,7 +190,7 @@
         }
         
     #subtitle2{
-            margin-left: 20px;
+            margin-left: 80px;
             margin-top: 12px;
             font-size: 12px;
             letter-spacing: 2px;
@@ -212,17 +213,17 @@
             display: flex;
         }
     footer #prev{
-            width: 600px;
+            width: 49.5%;
             height: 200px;
         }
     footer #line{
             margin-top: 20px;
-            width: 1px;
+            width: 0.05em;
             height: 160px;
             background-color: #ccc; 
         }
     footer #next{
-            width: 599px;
+            width: 49.5%;
             height: 200px;
         }
         
@@ -268,6 +269,10 @@
             transform: translateX(-5px);
         }
         
+    footer a{
+        text-decoration: none;
+        color: inherit;
+        }
         
         
     </style>
@@ -296,11 +301,11 @@
         <header>
         <div class="title_container">
             <div id="title">
-             Sreening 2015
+            aphasia
             </div>
             
             <div id="subtitle1">
-            VIDEO ART BOOKLET
+            Virtual graphic design studio
             </div>
             <div id="subtitle2">
             screening 2015 introduces 5 hot vidieo artist and their art.<br>
@@ -308,101 +313,99 @@
             </div>
             
         </div>
-        <img src="img/screening2015/coverimg.png" alt="" id="coverimg">
+        <img src="img/aphasia/coverimg.png"  id="coverimg">
         </header>
         <div id="grad_line"></div>
                 
 <!--        contents-->
        
        <section>
-           
-           <div id="sec1">
+            <div id="sec1">
+               Aphasia is a  virtual Design Studio.<br>
+Aphasia means a medical condition that makes a person unable to speak,<br> 
+or understand speech or writing because of damage to the brain.<br>
+Aphasia Design Studio  try to  impress  people only by “visual  things” without any word.
+               
+           </div>
+            <div id="sec2">
+              <div id="title">Logo starts from lip.
+                </div>
+                
+                <img src="img/aphasia/startFromLip.png" alt="">
+               
+                
+            </div>
+            <div id="line1"></div>
+            <div id="sec3">
               <div id="title">
-                COLORS
+                PROCESS
                 </div>
-                <div id="txt1">
-                Assign each individual color to each Artist.
-                </div>
+            
                 <div class="divider">
                     
-                    <div>
-                       <div id="color1"></div>
-                        Jisong Lee
-                    </div>
-                    <div>
-                        <div id="color2"></div>
-                         Ayoung Kim
-                    </div>
-                    <div>
-                       <div id="color3"></div>
-                        Kyungkun Park
-                    </div>
-                    <div>
-                       <div id="color4"></div>
-                        Kiwoun Shin
-                    </div>
-                    <div>
-                       <div id="color5"></div>
-                        Sung Rok Choi
-                    </div>
+                 
+                       <div id="process1">
+                           <img src="img/aphasia/process1.png" alt="">
+                       </div>
+                  
+                        <div id="process2">
+                            <img src="img/aphasia/process2.png" alt="">
+                        </div>
+                      
+    
+                       <div id="process3">
+                           <img src="img/aphasia/process3.png" alt="">
+                       </div>
+                       
+             
+                       <div id="process4">
+                           <img src="img/aphasia/process4.png" alt="">
+                       </div>
+                        
+            
                     
                 </div> 
             </div>
-           
-            <div id="sec2">
-              <div id="title">
-                4 COLUMN GRID
+            <div id="sec4">
+                <div id="title">
+                COLOR CODE
                 </div>
-                <div id="txt1">
-                Based on 4 column grid, the layout was modified slightly to accommodate each chapter.
+               <div class="colorContainer">
+                  <div id="color1">
+                       <div id="pinkColor"></div>
+                       <span>pink</span><br>
+                       #DC5E60
+                   </div>
+                   <div id="color2">
+                       <div id="greenColor"></div>
+                       <span>green</span><br>
+                       #DC5E60
+                   </div>
+                   
+               </div>
+               
+               
+               
+           </div>
+            <div id="sec5">
+                <div id="title">
+               VARIATION
                 </div>
-                <img src="img/screening2015/column01.png" alt="">
-                <img src="img/screening2015/column02.png" alt="">
+                <div class="variationContainer">
+                   <div id="vari01"><img src="img/aphasia/variation2.png" alt=""></div> 
+                   <div id="vari02"><img src="img/aphasia/variation1.png" alt=""></div>
+                </div>
+                <div class="variationContainer">
+                   <div id="vari03"><img src="img/aphasia/variation3.png" alt=""></div>
+                   <div id="vari04">
+                       <img src="img/aphasia/variation4.png" alt="">
+                   </div>
+                </div>  
                 
-            </div>
+           </div>
+            <div id="sec6"></div>
            
-           <div id="sec3">
-            <div id="title">
-                OTHER PAGES
-            </div>
-            <div id="txt01" class="caption">
-                 Cover - <span>Sung Rok Choi</span>
-            </div>
-            <img src="img/screening2015/page01_cover.png"  id="img01">
-            
-             <div id="txt02" class="caption">
-                 CV, Critic - <span>Sung Rok Choi</span>
-            </div>
-            <img src="img/screening2015/page02_CV.png"  id="img02">
-            
-             <div id="txt03" class="caption">
-                 Critic - <span>Sung Rok Choi</span>
-            </div>
-            <img src="img/screening2015/page03_Critic.png"  id="img03">
-            
-            <div id="txt04" class="caption">
-                 Interview - <span>Ayoung Kim</span>
-            </div>
-            <img src="img/screening2015/page04_Interview.png"  id="img04">
-            
-            <div id="txt05" class="caption">
-                 Cover - <span>Ki Woun Shin</span>
-            </div>
-            <img src="img/screening2015/page05_cover.png"  id="img05">
-               
-            <div id="txt06" class="caption">
-                 CV, Critic - <span>Ki Woun Shin</span>
-            </div>
-            <img src="img/screening2015/page06_cv.png"  id="img06">
-            
-            
-             </div>
-              
-              
-               
-           
-           
-           
+    
            
            
            
@@ -412,6 +415,7 @@
        
           <div id="bg1"></div>
           <div id="bg2"></div>
+          <div id="bg3"><img src="img/aphasia/application.png" alt=""></div>
         
 <!--        contentsEnd-->
         <footer>
@@ -471,7 +475,7 @@ $(document).ready(function() {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('#sec3 img').each( function(i){
+        $('img').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -487,30 +491,7 @@ $(document).ready(function() {
     });
     
 });
-    
-    
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.icon_container img').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object){
-                $(this).addClass('bounceIn',500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
+
 </script>    
 </body>
 </html>
