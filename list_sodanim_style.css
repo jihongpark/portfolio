@@ -1,3 +1,70 @@
+/*header*/
+
+
+
+header{
+        height: 480px;
+        padding-top: 85px;
+    
+            
+        }
+        
+    #coverimg{
+            position: absolute;
+            top: 72px;
+        height: 900px;
+        z-index: -1;
+        right: 20px;
+        animation: opacity, moveLeft;
+        animation-duration: 2s;
+        clip: rect(0px, 1200px, 560px, 0px);
+    
+        }
+        
+    .title_container{
+            margin-top: 60px;
+        }
+    header #title{
+            margin-top: 55px;
+            margin-left: 15px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 55px;
+            display: inline-block;
+            animation : moveRight, opacity;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            
+        }
+        
+        
+    #subtitle1{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 13px;
+            letter-spacing: 9px;
+            line-height: 30px;
+            animation : moveRight_delay, opacity_delay;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+        }
+        
+    #subtitle2{
+            margin-left: 20px;
+            margin-top: 12px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            line-height: 23px;
+            animation : moveRight_delay, opacity_delay;
+            animation-duration: 1.8s;
+            animation-timing-function: ease-in-out;
+        }
+
+
+
+/*animation*/
+
+
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -40,10 +107,10 @@
 
 
 
-
+/*section*/
 
 #sec1{
-    width: 1200px;
+    width: 100%;
     height: 688px;  
     opacity: 0;
 }
@@ -54,16 +121,20 @@
 }
 
 .secdivider_left{
-    width: 600px; 
+    width: 50%; 
     height: 600px; 
     opacity: 0;
 }
 .secdivider_right{
-    width: 600px;
+    width: 50%;
     height: 600px;
     opacity: 0;
 }
+
+
 #sec1 #title{
+    font-weight: 900;
+    letter-spacing: 2px;
     display: block;
     text-align: center;
     margin-top: 140px;
@@ -84,6 +155,7 @@
 
 #sec1 #img_arrow{
     margin-top: 100px;
+    width: 100%;
 }
 
 .arrow_caption_container{
@@ -94,7 +166,7 @@
 }
 .arrow_caption_container #right{
     float: right;
-    width: 1120px;
+    width: 94%;
     text-align: right;
 }
 
@@ -136,7 +208,7 @@
 
 
 #sec2{
-    width : 1200px;
+    width : 100%;
     height: 850px;  
     opacity: 0;    
 }
@@ -219,7 +291,8 @@
 }
 
 #sec2 #title{
-    
+    font-weight: 900;
+    letter-spacing: 2px;
     margin-top: 250px;
     margin-left: 40px;
     font-size: 30px;
@@ -239,13 +312,10 @@
 
 
 
-
-#sec3{
-    margin-top: 140px;
-}
-
 #sec3 #title{
-    width: 1200px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    width: 100%;
     font-size: 30px;
     color: #333;
     text-align: center;
@@ -254,7 +324,7 @@
 
 #sec3 #img01{
     width: 400px;
-    margin-top: 100px;
+    margin-top: 130px;
     margin-left: 160px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
     float: left;
@@ -295,7 +365,6 @@
     font-weight: 900;
     font-size: 48px;
     letter-spacing: 3px;
-    width: 700px;
     text-align: right;
     line-height: 1.1;
     opacity: 0;
@@ -305,14 +374,14 @@
     display: inline-block;
     width: 250px;
     line-height: 1.8;
-    margin-left: 280px;
+    margin-left: 300px;
     margin-top: 30px;
     margin-bottom: 500px;
     opacity: 0;
 }
 
 #sec4{
-    height: 3000px;
+    height: 2300px;
 }
 
 #sec4 #refletBg{
@@ -322,6 +391,7 @@
     left: 0px;
     width : 100%;
     height: 1000px;
+    opacity: 0;
 }
 
 #sec4 #refletImgBox{
@@ -331,6 +401,7 @@
     width : 100%;
     height: 800px;
     left: 0px;
+    
 }
 
 #sec4 #refletImg{
@@ -338,6 +409,7 @@
     width: 750px;
     padding: auto;
     display: table;
+    opacity: 0;
 }
 
 #sec4 #smallTitle{
@@ -348,6 +420,7 @@
     opacity: 0;
     font-weight: 900;
     letter-spacing: 2px;
+    opacity: 0;
 }
 
 
@@ -359,6 +432,7 @@
     text-align: center;
     font-weight: 900;
     letter-spacing: 3px;
+    opacity: 0;
 }
 
 #sec4 #txt1{
@@ -369,25 +443,30 @@
     text-align: center;
     letter-spacing: 2px;
     font-weight: 500;
+    opacity: 0;
 }
 
 
 
 #sec4 #reflet_all{
     margin-top: 100px;
-    width : 100%;
+    width : 80%;
     position: absolute;
     left: 0;
     background-color: #eee;
+    opacity: 0;
 }
 
 #sec5{
-    margin-top: 300px;
-    height: 2100px;
+    margin-top: 100px;
+    height: 1500px;
+    opacity: 0;
 }
 
 #sec5 #title{
-    width: 1200px;
+    width: 100%;
+    font-weight: 900;
+    letter-spacing: 2px;
     font-size: 30px;
     color: #333;
     text-align: center;
@@ -401,3 +480,78 @@
     width: 1000px;
 }
 
+
+
+
+/*footer*/
+                
+    footer{
+            width: 100%;
+            height: 200px;
+            margin-bottom: 80px;
+        }
+    footer .container{
+            display: flex;
+        }
+    footer #prev{
+            width: 49.5%;
+            height: 200px;
+        }
+    footer #line{
+            margin-top: 20px;
+            width: 0.05em;
+            height: 160px;
+            background-color: #ccc; 
+        }
+    footer #next{
+            width: 49.5%;
+            height: 200px;
+        }
+        
+    footer #prev #textarea{
+            margin-top: 70px;
+            float: right;
+            margin-right: 130px;
+            color: #999;
+            transition: all .5s;
+            letter-spacing: 1.5px;
+        }
+    footer #prev #textarea #txt1{
+            font-size: 30px;
+            text-align: right;
+            font-weight: 500;
+        }
+    footer #prev #textarea #txt2{
+            margin-top: 15px;
+            font-size: 16px;
+            text-align: right;
+        }
+     footer #next #textarea{
+            margin-top: 70px;
+            margin-left: 130px;
+            color: #999;
+            transition: all .5s;
+            letter-spacing: 1.5px;
+        }
+    footer #next #textarea #txt1{
+            font-size: 30px;
+            font-weight: 500;
+        }
+    footer #next #textarea #txt2{
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    footer #next #textarea:hover{
+            color: #757575;
+            transform: translateX(5px);
+        }
+    footer #prev #textarea:hover{
+            color: #757575;
+            transform: translateX(-5px);
+        }
+        
+    footer a{
+        text-decoration: none;
+        color: inherit;
+        }
+        

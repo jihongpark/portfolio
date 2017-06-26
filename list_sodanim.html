@@ -142,138 +142,6 @@
         animation-duration: .5s;
         animation-timing-function: ease-in-out;
         }
-    
-    header{
-        height: 480px;
-        padding-top: 85px;
-    
-            
-        }
-        
-    #coverimg{
-            position: absolute;
-            top: 72px;
-        height: 900px;
-        z-index: -1;
-        right: 20px;
-        animation: opacity, moveLeft;
-        animation-duration: 2s;
-        clip: rect(0px, 1200px, 560px, 0px);
-    
-        }
-        
-    .title_container{
-            margin-top: 60px;
-        }
-    #title{
-            margin-top: 55px;
-            margin-left: 15px;
-            font-weight: 900;
-            letter-spacing: 2px;
-            font-size: 55px;
-            display: inline-block;
-            animation : moveRight, opacity;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-            
-        }
-        
-        
-    #subtitle1{
-            margin-left: 20px;
-            margin-top: 20px;
-            font-size: 13px;
-            letter-spacing: 9px;
-            line-height: 30px;
-            animation : moveRight_delay, opacity_delay;
-            animation-duration: 1.5s;
-            animation-timing-function: ease-in-out;
-        }
-        
-    #subtitle2{
-            margin-left: 20px;
-            margin-top: 12px;
-            font-size: 12px;
-            letter-spacing: 2px;
-            line-height: 23px;
-            animation : moveRight_delay, opacity_delay;
-            animation-duration: 1.8s;
-            animation-timing-function: ease-in-out;
-        }
-        
-        
-               
-/*footer*/
-                
-    footer{
-            width: 100%;
-            height: 200px;
-            margin-bottom: 80px;
-        }
-    footer .container{
-            display: flex;
-        }
-    footer #prev{
-            width: 49.5%;
-            height: 200px;
-        }
-    footer #line{
-            margin-top: 20px;
-            width: 0.05em;
-            height: 160px;
-            background-color: #ccc; 
-        }
-    footer #next{
-            width: 49.5%;
-            height: 200px;
-        }
-        
-    footer #prev #textarea{
-            margin-top: 70px;
-            float: right;
-            margin-right: 130px;
-            color: #999;
-            transition: all .5s;
-            letter-spacing: 1.5px;
-        }
-    footer #prev #textarea #txt1{
-            font-size: 30px;
-            text-align: right;
-            font-weight: 500;
-        }
-    footer #prev #textarea #txt2{
-            margin-top: 15px;
-            font-size: 16px;
-            text-align: right;
-        }
-     footer #next #textarea{
-            margin-top: 70px;
-            margin-left: 130px;
-            color: #999;
-            transition: all .5s;
-            letter-spacing: 1.5px;
-        }
-    footer #next #textarea #txt1{
-            font-size: 30px;
-            font-weight: 500;
-        }
-    footer #next #textarea #txt2{
-            margin-top: 15px;
-            font-size: 16px;
-        }
-    footer #next #textarea:hover{
-            color: #757575;
-            transform: translateX(5px);
-        }
-    footer #prev #textarea:hover{
-            color: #757575;
-            transform: translateX(-5px);
-        }
-        
-    footer a{
-        text-decoration: none;
-        color: inherit;
-        }
         
         
     </style>
@@ -495,6 +363,54 @@ $(document).ready(function() {
     
         /* Check the location of each desired element */
         $('#sec3 img').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('#sec4 img').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object){
+                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('#sec5 img').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
