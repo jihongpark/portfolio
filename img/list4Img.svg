@@ -125,7 +125,7 @@
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Mask" fill="#FFFFF4" xlink:href="#path-1"></use>
+                <use id="Mask" fill="#FFFBBF" xlink:href="#path-1"></use>
                 <g id="coverimg" mask="url(#mask-2)">
                     <g transform="translate(62.000000, -588.000000)">
                         <g id="구름_햇빛_별_갈매기" transform="translate(35.016018, 4.502069)">

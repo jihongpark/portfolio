@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1201px" height="502px" viewBox="0 0 1201 502" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1200px" height="500px" viewBox="0 0 1200 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
     <title>list1Img</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD-Copy-7" transform="translate(-120.000000, -982.000000)">
+        <g id="Desktop-HD-Copy-7" transform="translate(-120.000000, -983.000000)">
             <g id="list1Img" transform="translate(120.000000, 983.000000)">
                 <polygon id="Rectangle-5-Copy" fill="#4183AC" points="0 0 600 0 600 500 197.829861 500 0 500"></polygon>
-                <polygon id="Rectangle-5-Copy-2" stroke="#979797" fill="#FF704F" points="600 0 1200 0 1200 500 797.829861 500 600 500"></polygon>
-                <g id="Group-3" transform="translate(241.000000, 140.000000)">
-                    <g id="Group-4" transform="translate(0.000000, -11.000000)">
+                <polygon id="Rectangle-5-Copy-2" fill="#FF704F" points="600 0 1200 0 1200 500 797.829861 500 600 500"></polygon>
+                <g id="Group-3" transform="translate(246.000000, 129.000000)">
+                    <g id="Group-4">
                         <polygon id="Fill-1" fill="#FF704F" points="0 241.762318 107.349124 241.762318 107.349124 209 0 209"></polygon>
                         <polygon id="Fill-2" fill="#FF704F" points="0 32.7623178 107.349947 32.7623178 107.349947 0 0 0"></polygon>
                         <path d="M85.5623136,70.723215 L0,146.522467 L21.7275917,171.039103 L107.289905,95.2398505 L85.5623136,70.723215 Z M85.0885621,78.5626168 L99.4491538,94.7661308 L22.2013432,163.200523 L7.83992899,146.996187 L85.0885621,78.5626168 Z" id="Fill-3" fill="#212121"></path>
