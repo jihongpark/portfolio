@@ -1,4 +1,6 @@
-    header{
+/*header*/
+
+header{
         height: 480px;
         padding-top: 85px;
     
@@ -55,6 +57,22 @@
             animation-duration: 1.8s;
             animation-timing-function: ease-in-out;
         }
+        
+    #grad_line{
+        height: 1px;
+        width: 100%;
+        background: rgba(255, 180, 126, 73);
+        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        animation: nav_longer, opacity;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+        
+
+/*section*/
         
 #sec1{
     width: 100%;

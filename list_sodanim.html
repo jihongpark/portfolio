@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
    <link rel="stylesheet" href="list_sodanim_style.css">
+   <link rel="stylesheet" href="list_sodanim_mobile_style.css">
     <style>
         
     @keyframes reverse_blur{
@@ -128,21 +129,6 @@
     
     }  
         
-/*-navigationEnd---------------------*/
-        
-    #grad_line{
-        height: 1px;
-        width: 100%;
-        background: rgba(255, 180, 126, 73);
-        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
-        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
-        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
-        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
-        animation: nav_longer, opacity;
-        animation-duration: .5s;
-        animation-timing-function: ease-in-out;
-        }
-        
         
     </style>
     
@@ -211,18 +197,29 @@ new friends while traveling
                     <div id="left">inactive</div>
                     <div id="right">active</div>
                 </div>
-                <div class="character_container">
-                <img src="img/sodanim/sloth.gif" alt="" id="img_sloth">
-                <img src="img/sodanim/cat.gif" alt="" id="img_cat">
-                <img src="img/sodanim/dog.gif" alt="" id="img_dog">
-                <img src="img/sodanim/monky.gif" alt="" id="img_monky">
-                </div>
-                <div class="character_caption_container">
-                <img src="img/sodanim/caption_lazysloth.png">
-                <img src="img/sodanim/caption_loftycat.png">
-                <img src="img/sodanim/caption_roamdog.png">
-                <img src="img/sodanim/caption_madmonky.png">
-                </div>
+                    <div class="character_container">
+                    
+                    <div id="sloth_container">
+                        <img src="img/sodanim/sloth.gif" alt="" id="img_sloth">
+                        <img src="img/sodanim/caption_lazysloth.png" class="caption">
+                    </div>
+
+                    <div id="cat_container">
+                        <img src="img/sodanim/cat.gif" alt="" id="img_cat">
+                        <img src="img/sodanim/caption_loftycat.png" class="caption">
+                    </div>
+                    <div id="dog_container">
+                       <img src="img/sodanim/dog.gif" alt="" id="img_dog">
+                       <img src="img/sodanim/caption_roamdog.png" class="caption">
+                    </div>
+                    <div id="monky_container">
+                        <img src="img/sodanim/monky.gif" alt="" id="img_monky" class="caption">
+                        
+                        <img src="img/sodanim/caption_madmonky.png" class="caption">
+                    </div>
+               </div>
+                
+    
             </div>
 
 
@@ -274,10 +271,7 @@ When they sign up the service.<br>
     
        
        <div id="sec4">
-          <img src="img/sodanim/reflet_mockup_bg.png" id="refletBg" alt="">
-          <div id="refletImgBox">
           <img src="img/sodanim/reflet_mockup.png" id="refletImg" alt="">
-          </div>
           <div id="smallTitle">BROCHURE DESIGN</div>
           
            <div id="bigTitle">
@@ -410,7 +404,7 @@ $(document).ready(function() {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('#sec5 img').each( function(i){
+        $('#sec5 img, #sec1 img').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();

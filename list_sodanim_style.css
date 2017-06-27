@@ -60,7 +60,19 @@ header{
             animation-timing-function: ease-in-out;
         }
 
-
+    #grad_line{
+        height: 1px;
+        width: 100%;
+        background: rgba(255, 180, 126, 73);
+        background: -webkit-linear-gradient(left,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -o-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: -moz-linear-gradient(right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        background: linear-gradient(to right,rgba(255, 180, 126, 73), rgba(79, 72, 255, 73));
+        animation: nav_longer, opacity;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+        
 
 /*animation*/
 
@@ -199,18 +211,27 @@ header{
     margin-left: 40px;
 }
 
-
-.character_caption_container img{
+#sec1 .caption{
     width: 240px;
-    margin-left: 36px;
+    margin-left: 40px;
 }
-
 
 
 #sec2{
     width : 100%;
     height: 850px;  
     opacity: 0;    
+}
+
+
+#bg1{
+    position: absolute;
+    left: 0;
+    top:1460px;
+    width : 100%;
+    height: 850px;  
+    background-color: #f3f3f3;
+    z-index: -1;
 }
 
 .icon_container{
@@ -270,25 +291,7 @@ header{
     width: 660px;
 }
 
-#bg1{
-    position: absolute;
-    left: 0;
-    top:1460px;
-    width : 100%;
-    height: 850px;  
-    background-color: #f3f3f3;
-    z-index: -1;
-}
 
-
-#sec2 #bg{
-    position: absolute;
-    left: 0;
-    width : 100%;
-    height: 600px;  
-    background-color: #f3f3f3;
-    z-index: -1;
-}
 
 #sec2 #title{
     font-weight: 900;
@@ -381,34 +384,17 @@ header{
 }
 
 #sec4{
-    height: 2300px;
+    height: 2200px;
 }
 
-#sec4 #refletBg{
-    z-index: -1;
+
+#sec4 #refletImg{
+     z-index: -1;
     position: absolute;
     top:4250px;
     left: 0px;
     width : 100%;
     height: 1000px;
-    opacity: 0;
-}
-
-#sec4 #refletImgBox{
-    z-index: 1;
-    position: absolute;
-    top:4250px;
-    width : 100%;
-    height: 800px;
-    left: 0px;
-    
-}
-
-#sec4 #refletImg{
-    margin: 415px auto;
-    width: 750px;
-    padding: auto;
-    display: table;
     opacity: 0;
 }
 
@@ -426,7 +412,7 @@ header{
 
 #sec4 #bigTitle{
     margin-top: 50px;
-    width: 1200px;
+    width: 100%;
     font-size: 34px;
     color: #aeaeae;
     text-align: center;
@@ -437,7 +423,7 @@ header{
 
 #sec4 #txt1{
     font-size: 18px;
-    margin-top: 850px;
+    margin-top: 800px;
     line-height: 36px;
     color: #757575;   
     text-align: center;
@@ -449,8 +435,8 @@ header{
 
 
 #sec4 #reflet_all{
-    margin-top: 100px;
-    width : 80%;
+    margin-top: 120px;
+    width : 100%;
     position: absolute;
     left: 0;
     background-color: #eee;
@@ -458,9 +444,7 @@ header{
 }
 
 #sec5{
-    margin-top: 100px;
-    height: 1500px;
-    opacity: 0;
+    height: 1400px;
 }
 
 #sec5 #title{
@@ -477,7 +461,8 @@ header{
 #sec5 img{
     margin:auto;
     display: table;
-    width: 1000px;
+    width: 80%;
+    opacity: 0;
 }
 
 
@@ -554,4 +539,3 @@ header{
         text-decoration: none;
         color: inherit;
         }
-        
