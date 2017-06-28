@@ -31,17 +31,75 @@
         <section>
         <div id="title_work">work</div> 
         <div class="list">
-          <a href="list_zcrowd.html">
-           <div class="blist" id="list1"><img src="img/list1Img.svg" alt=""></div></a>
+          
+           <div id="list1" class="blist">
+               <a href="list_zcrowd.html">
+    
+                   <div id="caption">
+                        <div id="title">
+                        ZCROWD
+                        </div>
+                        <div id="txt">
+                        SOCIAL IMPACT<br>CROWDFUNDING PLATFORM
+                        </div>
+                 
+                </div>
+                <img src="img/list1Img.svg" alt="">
+               </a>
+           </div>
            
-            <div class="list_container">
-               
-                <a href="list_screening.html"><div class="slist_left" id="list2"><img src="img/list3_thescreening.png" alt=""></div></a>
-                <a href="list_aphasia.html"><div class="slist_right" id="list3
-                "><img src="img/list3_aphasia.png" alt=""></div></a>
+           
+        <div class="list_container">
+            <div id="list2" class="slist_left">
+                <a href="list_screening.html">
+                   
+                   <div id="caption">
+                        <div id="title">
+                        Screening 2015
+                        </div>
+                        <div id="txt">
+                        Booklet of<br>Video Artists
+                        </div>
+                 
+                </div>
+                   
+                    <img src="img/list3_thescreening.png" alt="">
+                </a>
             </div>
-            
-            <a href="list_sodanim.html"><div class="blist" id="list4"><img src="img/list4Img.svg" alt=""></div></a>
+               <div id="list3" class="slist_right" >
+                <a href="list_aphasia.html">
+                   
+                   <div id="caption">
+                        <div id="title">
+                        Aphasia
+                        </div>
+                        <div id="txt">
+                        Virtual Branding Studio
+                        </div>
+                 
+                </div>
+                   
+                   
+                    <img src="img/list3_aphasia.png" alt="">
+                </a>
+                </div>
+        </div>
+            <div id="list4" class="blist">
+                <a href="list_sodanim.html">
+                   
+                    <div id="caption">
+                        <div id="title">
+                        SODANIM
+                        </div>
+                        <div id="txt">
+                        Making Friend Service while traveling
+                        </div>
+                 
+                </div>
+                   
+                    <img src="img/list4Img.svg" alt="">
+                </a>
+            </div>
         </div>
         </section>
         <footer>
@@ -147,7 +205,7 @@ $(document).ready(function() {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('.list div').each( function(i){
+        $('.list div:not("#caption")').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();

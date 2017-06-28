@@ -225,22 +225,61 @@ nav{
     .list{
            margin-top: 30px; 
         }
+
     .list_container{
           display: flex;     
             width: 100%;
         justify-content: space-between;
         }
         
+
     .blist, .slist_left, .slist_right{
-            opacity: 0;
+
             height: 500px;
-            background-color: #f3f3f3;  
+            background-color: #333;  
             margin-top: 20px;
             transition: box-shadow, transform 1s;
             overflow: hidden;
             transition: all 1s;
+	        -webkit-transition: .3s ease-in-out;
+	        transition: .3s ease-in-out;
+            opacity: 0;
+            position: relative;
         }
         
+
+
+#caption{
+    position: absolute;
+    z-index: 1;
+    left: -10%;
+    opacity: 0;
+    transition: all .3s;
+    animation-timing-function: ease-in-out;
+}
+
+#caption #title{
+    margin-top: 5em;
+    margin-left: 40px;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 800;
+    
+}
+
+#caption #txt{
+    margin-left: 40px;
+    margin-top: 1em;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+
+
+
     .blist{
             width: 100%;
         }
@@ -275,18 +314,49 @@ nav{
 }
 
 .blist img, .slist_right img, .slist_left img{
-    transition: all 1s;
+    transition: all .8s;
 }
 
-.blist img:hover, .slist_right img:hover, .slist_left img:hover{
-    -moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				transform: scale(1.1);
+.blist:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: .5;
 }
 
-    
+.slist_right:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: .5;
+}
 
+
+.slist_left:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+
+.blist:hover #caption{
+    opacity: 1; 
+    left: 8%;
+    }
+
+.slist_right:hover #caption{
+    opacity: 1; 
+    left: 8%;
+    }
+
+.slist_left:hover #caption{
+    opacity: 1; 
+    left: 8%;
+    }
 /*footer*/
 
 footer{

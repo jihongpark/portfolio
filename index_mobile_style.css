@@ -160,21 +160,6 @@
         }
         
      #subtitle{
-            margin-top: 0em;
-             margin-right:0;
-             margin-left: 0;
-            font-weight: 900;
-            font-style: italic;
-            font-size: 1em;
-             display: block;
-            color: rgba(200,200,200,0.5);
-            letter-spacing: 4px;
-            mix-blend-mode : multifly;
-            animation: moveX;
-            animation-duration: 1s;
-            -webkit-filter: none;
-            filter: none;
-            transition: all 1s;
              width: 100%;
          visibility: hidden;
         }
