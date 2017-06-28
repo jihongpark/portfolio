@@ -56,6 +56,14 @@
         animation-timing-function: ease-in-out;
         }
         
+     .bold{
+    font-weight: 600;
+    top: 30px;
+        position: fixed;
+        width: 88.5%
+    }
+        
+        
     body{
             font-family: 'Montserrat', sans-serif;
             font-weight: 200;
@@ -73,8 +81,13 @@
 
         
 /*--navigation----------------------------------*/
+  nav{
+    width: 90%;
+    max-width: 90em;
+    position: absolute;
+    top: 45px;
+}   
     #nav_grad{
-        margin-top: 40px;
         margin-bottom: 13px;
         height: 14px;
         width: 100%;
@@ -89,31 +102,29 @@
         }
         
     .nav_menu{
-            position: fixed;
             color: #333333;
             display: flex;
             justify-content: space-between;
-            width: 90%;
         }   
     .nav_menu a {
         color: #333333;
         text-decoration: none;
         transition: all .5s;
         }
+
    .nav_menu input{
         border: none;
+        position: relative;
         color: #333;
         background-color: transparent;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
         font-size: 14px;
         letter-spacing: 1px;
-        position: absolute;
         transition: all .5s;
-       right: 0px;
         } 
 
-  .nav_menu a:hover{
+  .nav_menu #nav01:hover{
         font-style: italic;
         font-weight: 600;
         color: #666;
@@ -121,12 +132,14 @@
     
     }
 
-   .nav_menu input:hover{
+   .nav_menu #nav02:hover{
         font-style: italic;
         font-weight: 600;
         color: #666;
         background-color: rgba(79, 72, 255, .2);
-        }
+    
+    }  
+
            
         
     </style>
@@ -137,18 +150,7 @@
 <body>
         
     <div class="container">
-        <nav>
-            <div id="nav_grad">
-            </div>
-            <div class="nav_menu">
-            <div id="nav01">
-            <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/index.html" id="jihong">jihong.park</a>
-           </div>
-           <div id="nav02">
-            <input type="button" value="work" id="nav_work">
-            </div>
-            </div>
-        </nav>
+
         
 <!--        header-->
        
@@ -296,12 +298,43 @@
            </div>
            <div id="grad_line"></div> 
         </footer>
-
+    <nav>
+            <div id="nav_grad">
+            </div>
+            <div class="nav_menu">
+            <div id="nav01">
+            <a href="index.html" id="jihong">jihong.park</a>
+           </div>
+           <div id="nav02">
+            <a id="nav_work">work</a>
+            </div>
+            </div>
+        </nav>
   </div> 
 
 <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 
 <script>
+    
+    //    nav
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.nav_menu').each( function(i){
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( $(window).scrollTop() > 30){
+                $('.nav_menu').addClass('bold',100);
+                    
+            } else if($(window).scrollTop() <= 30){
+                $('.nav_menu').removeClass('bold',100);
+            }
+            
+        }); 
+    
+    });
+    
+    
     
 $(document).ready(function() {
     

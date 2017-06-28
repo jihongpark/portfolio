@@ -57,6 +57,12 @@
         animation-timing-function: ease-in-out;
         }
         
+     .bold{
+    font-weight: 600;
+    top: 30px;
+        position: fixed;
+        width: 88.5%
+    }
         
     body{
             font-family: 'Montserrat', sans-serif;
@@ -76,8 +82,13 @@
         
 /*--navigation----------------------------------*/
         
-#nav_grad{
-        margin-top: 40px;
+nav{
+    width: 90%;
+    max-width: 90em;
+    position: absolute;
+    top: 45px;
+}   
+    #nav_grad{
         margin-bottom: 13px;
         height: 14px;
         width: 100%;
@@ -92,19 +103,19 @@
         }
         
     .nav_menu{
-            position: fixed;
             color: #333333;
             display: flex;
             justify-content: space-between;
-            width: 90%;
         }   
     .nav_menu a {
         color: #333333;
         text-decoration: none;
         transition: all .5s;
         }
+
    .nav_menu input{
         border: none;
+        position: relative;
         color: #333;
         background-color: transparent;
         font-family: 'Montserrat', sans-serif;
@@ -114,7 +125,7 @@
         transition: all .5s;
         } 
 
-  .nav_menu a:hover{
+  .nav_menu #nav01:hover{
         font-style: italic;
         font-weight: 600;
         color: #666;
@@ -122,13 +133,14 @@
     
     }
 
-   .nav_menu input:hover{
+   .nav_menu #nav02:hover{
         font-style: italic;
         font-weight: 600;
         color: #666;
         background-color: rgba(79, 72, 255, .2);
     
-    } 
+    }  
+
         
     </style>
     
@@ -140,18 +152,6 @@
     <div class="container">
        <div id="bg_grad">
        </div>
-        <nav>
-            <div id="nav_grad">
-            </div>
-            <div class="nav_menu">
-            <div id="nav01">
-            <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/index.html" id="jihong">jihong.park</a>
-           </div>
-           <div id="nav02">
-            <input type="button" value="work" id="nav_work">
-            </div>
-            </div>
-        </nav>
         <header>
         <div class="title_container">
             <div id="title">
@@ -208,7 +208,7 @@ Socially-valued project and company.
                 LOGO DESIGN
                 </div>
                 <div id="txt1">
-                ZCZCROWD makes new socially-valued investment culture 
+                ZCROWD makes new socially-valued investment culture 
 <br>
     by connecting two services.
                 </div>
@@ -225,7 +225,7 @@ Socially-valued project and company.
        </div>
        <div id="sec4">
           <div id="bg"></div>
-          <div id="txt1">loading animation</div>
+          <div id="txt1">Loading animation</div>
           <img src="img/zcrowd/loadingAnimation_example-3.gif" alt="">
        </div>
        <div id="sec5">
@@ -234,13 +234,12 @@ Socially-valued project and company.
                 </div>
                 <img src="img/zcrowd/webDesign_01.png" id="img01" alt="">
               <div id="name01">index</div>
-            <div id="txt01">Explain the whole service and expose concept of platform in main banner.
-Introduce both of main services and each main product.</div>
+            <div id="txt01">Show the concepts of service on the main banner.<br>
+ Introduce services and Show representitive products of each of the two main services.</div>
       
       <img src="img/zcrowd/webDesign_02.jpg" id="img02" alt="">
       <div id="name02">introduce<br>service</div>
-            <div id="txt02">Explain the whole service and expose concept of platform in main banner.
-Introduce both of main services and each main product.</div>
+            <div id="txt02">Show the process of participating in each of the two services.</div>
     </div>
     
     
@@ -249,7 +248,7 @@ Introduce both of main services and each main product.</div>
            <div id="title">
                 PRODUCT LIST
             </div>
-            <div id="txt1">Apply different List Layout according to product traits</div>
+            <div id="txt1">Apply different List Layout according to the characteristics of the product.</div>
             <img src="img/zcrowd/layout_debt.svg" alt="" id="img_layout_debt">
             <img src="img/zcrowd/layout_reward.svg" alt="" id="img_layout_reward">
             <div class="layout_caption">
@@ -263,14 +262,12 @@ Introduce both of main services and each main product.</div>
             </div>
             </div>
          <img src="img/zcrowd/webDesign_03.jpg" id="img01" alt="">
-              <div id="name01">index</div>
-            <div id="txt01">Explain the whole service and expose concept of platform in main banner.
-Introduce both of main services and each main product.</div>
+              <div id="name01">Debt<br>Product<br>List</div>
+            <div id="txt01">The most important aspect of the investment was visible on the cards, the investment period, the goals, the amount of time remaining, and the time remaining.</div>
       
       <img src="img/zcrowd/webDesign_04.jpg" id="img02" alt="">
-      <div id="name02">introduce<br>service</div>
-            <div id="txt02">Explain the whole service and expose concept of platform in main banner.
-Introduce both of main services and each main product.</div>
+      <div id="name02">Reward Prduct<br>List</div>
+            <div id="txt02">Reward products are displayed a flexible vertical card layout to present the characteristics of each item in the card.</div>
        </div>
        
        
@@ -315,6 +312,20 @@ Introduce both of main services and each main product.</div>
            </div>
            <div id="grad_line"></div> 
         </footer>
+        
+        <nav>
+            <div id="nav_grad">
+            </div>
+            <div class="nav_menu">
+            <div id="nav01">
+            <a href="index.html" id="jihong">jihong.park</a>
+           </div>
+           <div id="nav02">
+            <a id="nav_work">work</a>
+            </div>
+            </div>
+        </nav>
+        
     </div>
 
 
@@ -322,6 +333,26 @@ Introduce both of main services and each main product.</div>
 <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 
 <script>
+    
+//    nav
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.nav_menu').each( function(i){
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( $(window).scrollTop() > 30){
+                $('.nav_menu').addClass('bold',100);
+                    
+            } else if($(window).scrollTop() <= 30){
+                $('.nav_menu').removeClass('bold',100);
+            }
+            
+        }); 
+    
+    });
+    
+    
     
 $(document).ready(function() {
     
