@@ -256,6 +256,7 @@ header{
 
 .icon_container img{
     width: 120px;
+    opacity: 0;
     
 }
 .icon_container_2{

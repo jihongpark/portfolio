@@ -116,7 +116,7 @@
 /*--navigationEnd------------------------------*/
 
     header{
-        height: 685px;
+        height: 500px;
         padding-top: 25px;            
         }
         
@@ -160,12 +160,12 @@
         }
         
      #subtitle{
-            margin-top: 2em;
+            margin-top: 0em;
              margin-right:0;
              margin-left: 0;
             font-weight: 900;
             font-style: italic;
-            font-size: 2em;
+            font-size: 1em;
              display: block;
             color: rgba(200,200,200,0.5);
             letter-spacing: 4px;
@@ -176,6 +176,7 @@
             filter: none;
             transition: all 1s;
              width: 100%;
+         visibility: hidden;
         }
         
     #subtitle:hover{
@@ -185,7 +186,7 @@
             font-style: none;
         }
     #title_work{
-        margin-top: 5em;
+            margin-top: 0px;
             font-size:1.5em;
             text-align: center;
             font-weight: 800;
@@ -268,16 +269,19 @@
             box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
             transform: translateY(-3px);
         }
-        
-    footer div{
-            width: 100p%;
-            height: 200px;
-        }
+
 .slist_right:hover, .slist_left:hover{
             box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
             transform: translateY(-3px);
                
         }
+    
+     footer div{
+            width: 100p%;
+        height: 0px;
+        }
+    
+    
 }
     
     

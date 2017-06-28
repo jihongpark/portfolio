@@ -336,7 +336,7 @@ $(document).ready(function() {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('section div').each( function(i){
+        $('section div:not(.icon_container div)').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -361,7 +361,7 @@ $(document).ready(function() {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('#sec3 img').each( function(i){
+        $('#sec3 img, #sec4 img, #sec5 img, #sec1 img').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -378,53 +378,6 @@ $(document).ready(function() {
     
 });
     
-    
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('#sec4 img').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object){
-                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
-    
-    
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('#sec5 img, #sec1 img').each( function(i){
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object){
-                $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
     
     
 $(document).ready(function() {
@@ -440,7 +393,7 @@ $(document).ready(function() {
             
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object){
-                $(this).addClass('bounceIn',500);
+                $(this).animate({'opacity':'1'},500).addClass('bounceIn',500);
                     
             }
             
