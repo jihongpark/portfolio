@@ -14,18 +14,6 @@
     <div class="container">
        <div id="bg_grad">
        </div>
-        <nav>
-            <div id="nav_grad">
-            </div>
-            <div class="nav_menu">
-            <div id="nav01">
-            <a href="file:///Users/jihongpark/Desktop/portfolio_website/portfolio_coding/index.html" id="jihong">jihong.park</a>
-           </div>
-           <div id="nav02">
-            <input type="button" value="work" id="nav_work">
-            </div>
-            </div>
-        </nav>
         <header>
              
               <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
@@ -59,6 +47,22 @@
         <footer>
             <div></div>
         </footer>
+        
+<!--        nav-->
+       
+       
+        <nav>
+            <div id="nav_grad">
+            </div>
+            <div class="nav_menu">
+            <div id="nav01">
+            <a href="index.html" id="jihong">jihong.park</a>
+           </div>
+           <div id="nav02">
+            <a id="nav_work">work</a>
+            </div>
+            </div>
+        </nav>
 </div>
 
 
@@ -71,14 +75,19 @@
 
 <script>
     
-//document.getElementById('nav_work').addEventListener('click',function(){
-//        window.scrollTo(0,680);
-//    });
-//    
-$('#nav_work').on('click', function(){
-        window.scrollTo(0,680);
-    })
+
+//work scroll
     
+    
+$(document).on('click', '#nav_work', function(){
+    window.scrollTo(0,720);
+});
+
+$(document).ready(function(){
+    $('#nav_work').trigger("click");
+});
+    
+
 //main_text_animation------------------------
     
  consoleText(['Hello','I\'m Jihong.Park', 'I Love What I Do'], 'text',['#333','#333','#333']);
@@ -142,15 +151,14 @@ $(document).ready(function() {
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('.blist, .slist_right, .slist_left').each( function(i){
+        $('.list div').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object){
-                
-                $(this).animate({'opacity':'1'},500).animate({'top': '200px'});
+                $(this).animate({'opacity':'1'},10).addClass('moveUp',10);
                     
             }
             
@@ -159,6 +167,24 @@ $(document).ready(function() {
     });
     
 });
+    
+    
+$(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.nav_menu').each( function(i){
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( $(window).scrollTop() > 30){
+                $('.nav_menu').addClass('bold',100);
+                    
+            } else if($(window).scrollTop() <= 30){
+                $('.nav_menu').removeClass('bold',100);
+            }
+            
+        }); 
+    
+    });
     
 </script>    
 </body>

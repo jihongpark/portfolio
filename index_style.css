@@ -1,4 +1,10 @@
+/*reset*/
+
+
 html * { margin:0; padding:0; }
+
+
+/*animation*/
 
     @keyframes bg_longer{
             from {background-size: 0% 1200px;}
@@ -29,6 +35,24 @@ html * { margin:0; padding:0; }
             from {transform:translateX(-20px);}
             to {transform:translateX(0px);}
         }
+
+    @keyframes moveUp{
+            from {transform:translateY(50px);}
+            to {transform:translateY(0px);}
+        }
+        
+    .moveUp{
+        animation: moveUp;  
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        }
+
+    .bold{
+    font-weight: 600;
+    top: 30px;
+        position: fixed;
+        width: 88.5%
+    }
         
     body{
             font-family: 'Montserrat', sans-serif;
@@ -45,19 +69,22 @@ html * { margin:0; padding:0; }
             position: relative;
             
         }
-    img{
-            height: 500px;
-        }
+
 
     .container{
         margin: auto;
         width: 90%;
+        max-width: 90em;
         }
         
 /*--navigation----------------------------------*/
-        
+nav{
+    width: 90%;
+    max-width: 90em;
+    position: absolute;
+    top: 0;
+}   
     #nav_grad{
-        margin-top: 40px;
         margin-bottom: 13px;
         height: 14px;
         width: 100%;
@@ -72,31 +99,29 @@ html * { margin:0; padding:0; }
         }
         
     .nav_menu{
-            position: fixed;
             color: #333333;
             display: flex;
             justify-content: space-between;
-            width: 90%;
         }   
     .nav_menu a {
         color: #333333;
         text-decoration: none;
         transition: all .5s;
         }
+
    .nav_menu input{
         border: none;
+        position: relative;
         color: #333;
         background-color: transparent;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
         font-size: 14px;
         letter-spacing: 1px;
-        position: absolute;
         transition: all .5s;
-       right: 0px;
         } 
 
-  .nav_menu a:hover{
+  .nav_menu #nav01:hover{
         font-style: italic;
         font-weight: 600;
         color: #666;
@@ -104,7 +129,7 @@ html * { margin:0; padding:0; }
     
     }
 
-   .nav_menu input:hover{
+   .nav_menu #nav02:hover{
         font-style: italic;
         font-weight: 600;
         color: #666;
@@ -112,11 +137,13 @@ html * { margin:0; padding:0; }
     
     }  
 
+
 /*--navigationEnd------------------------------*/
 
     header{
-        height: 685px;
-        padding-top: 25px;            
+        height: 704px;
+        padding-top: 25px; 
+        margin-top: 45px;
         }
         
 /*title_animation---------------------------------------*/
@@ -182,6 +209,11 @@ html * { margin:0; padding:0; }
             font-style: none;
             margin-right: 130px;
         }
+
+
+
+/*work list*/
+
     #title_work{
             font-size: 30px;
             text-align: center;
@@ -246,28 +278,40 @@ html * { margin:0; padding:0; }
 
 .blist img:hover, .slist_right img:hover, .slist_left img:hover{
     -moz-transform: scale(1.1);
-				-webkit-transform: scale(1.1);
+-webkit-transform: scale(1.1);
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
 }
 
-        
     
 
+/*footer*/
+
+footer{
+    height: 100px;
+}
+    
+
+/*
         
     .blist:hover{
             box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
             transform: translateY(-3px);
         }
-        
-    footer div{
-            width: 100p%;
-            height: 200px;
-        }
+
 .slist_right:hover, .slist_left:hover{
             box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.12);
             transform: translateY(-3px);
                
+*/
+        }
+
+
+/*   footer*/
+
+    footer div{
+            width: 100p%;
+            height: 200px;
         }
 
 
