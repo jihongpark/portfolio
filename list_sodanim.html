@@ -329,7 +329,7 @@ by each character’s brouchure design.</div>
             <a href="index.html" id="jihong">jihong.park</a>
            </div>
            <div id="nav02">
-            <a id="nav_work">work</a>
+            <a href="index.html" id="nav_work">work</a>
             </div>
             </div>
         </nav>
@@ -339,6 +339,7 @@ by each character’s brouchure design.</div>
 
 <script>
 
+    
         //    nav
 $(window).scroll( function(){
     
@@ -356,6 +357,15 @@ $(window).scroll( function(){
         }); 
     
     });
+    
+    
+//nav work
+$('#nav_work').on('click', function(){
+    window.scrollTo(0,720);
+});
+    
+    
+//스크롤할때 하나씩 위로 올라오는거
     
 $(document).ready(function() {
     
