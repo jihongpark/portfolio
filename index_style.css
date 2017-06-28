@@ -48,10 +48,12 @@ html * { margin:0; padding:0; }
         }
 
     .bold{
-    font-weight: 600;
-    top: 30px;
+        font-weight: 600;
+        top: 30px;
         position: fixed;
-        width: 88.5%
+        width: 88.5%;
+        font-weight: 600;
+        mix-blend-mode: multiply;
     }
         
     body{
