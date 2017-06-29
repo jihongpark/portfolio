@@ -1,0 +1,109 @@
+@media ( max-width: 768px ) {
+    
+      body{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 200;
+            font-size: 14px;
+            letter-spacing: 1px;
+            background-image: none;
+            background-position: 100% 0;
+            background-size: 40% auto;
+            background-repeat: no-repeat;
+            position: relative;
+            
+        }
+
+/*--navigationEnd------------------------------*/
+
+    header{
+        height: 704px;
+        padding-top: 25px; 
+        margin-top: 45px;
+        }
+        
+/*title---------------------------------------*/
+
+    #title {
+        margin-top: 140px;
+        margin-left: 20px;
+        width: 200px;
+        letter-spacing: 3px;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size:3em;
+        position:relative;
+        color:#333;
+
+    }
+    
+    #title_add{
+        margin-top: 10px;
+        width: 300px;
+          margin-left: 20px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            display: inline-block;
+        
+            animation: moveX, opacity;
+            line-height: 2;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+        }
+        
+
+#title_add a:link{
+    color:rgba(79,72,255,73);
+}
+#title_add a:hover{
+    color:#FFB47E;
+}
+
+#title_add a{
+    text-decoration: none;
+}
+
+    
+#tool_title{
+        margin-top: 60px;
+         margin-left: 20px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            display: inline-block;
+            font-weight: 700;
+            color: #ccc;
+            width: 100%;
+            animation: moveX, opacity;
+            line-height: 2;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+}
+    
+.tool{
+    display: flex;
+
+           margin-top: 10px;
+            margin-left: 20px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            color: #ccc;
+            animation: moveX, opacity;
+            line-height: 3;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            margin-bottom: 50px;
+}
+
+.tool #list1{
+    width: 180px;
+}
+
+
+ 
+    
+    
+    
+    
+    
+}

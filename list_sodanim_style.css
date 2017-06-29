@@ -260,6 +260,7 @@ header{
     opacity: 0;
     
 }
+
 .icon_container_2{
     margin-top: 60px;
     display: flex;
@@ -272,6 +273,8 @@ header{
     height: 120px;
     margin-left: 60px;
 }
+
+
 
 .icon_container_3{
    margin-top: 60px;
@@ -293,6 +296,9 @@ header{
     width: 660px;
 }
 
+.icon_container_1 #hidden{
+    visibility: hidden;
+}
 
 
 #sec2 #title{

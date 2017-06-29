@@ -195,7 +195,7 @@ header #title{
 .icon_container{
     position: absolute;
     top:2600px;
-    right: 0px;
+    right: 60px;
     width: 100%;
     height: auto;
 }
@@ -211,7 +211,16 @@ header #title{
     margin-left: 5%;
     
 }
-
+    
+.icon_container .mobileHidden{
+    visibility: hidden;
+}
+    
+.icon_container_1 #hidden{
+    visibility: visible;
+}
+    
+    
 .icon_container img{
     width: 80px;
     
