@@ -109,23 +109,22 @@
             display: flex;
             justify-content: space-between;
         }   
+.nav_menu div{
+        width: 100px;
+}
     .nav_menu a {
         color: #333333;
         text-decoration: none;
         transition: all .5s;
         }
 
-   .nav_menu input{
-        border: none;
-        position: relative;
-        color: #333;
-        background-color: transparent;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 200;
-        font-size: 14px;
-        letter-spacing: 1px;
-        transition: all .5s;
-        } 
+    .nav_menu #nav02{
+        text-align: center;
+    }
+
+    .nav_menu #nav03{
+        text-align: right;
+    }
 
   .nav_menu #nav01:hover{
         font-style: italic;
@@ -149,8 +148,28 @@
         color: #666;
         background-color: rgba(79, 72, 255, .2);
     
-    }        
+    }    
         
+@media ( max-width: 768px ) {
+    nav{
+        top:30px;
+    }
+    .nav_menu div{
+        width: 80px;
+    }
+    
+    .nav_menu a { 
+        font-size: 12px;    
+    
+        }
+    
+    #nav_grad{
+
+        height: 12px;
+        margin-bottom: 11px;
+
+        }
+ }
     </style>
     
 </head>

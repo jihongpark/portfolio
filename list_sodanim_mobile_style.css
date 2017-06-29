@@ -3,7 +3,6 @@
     
 /*header    */
 
-
 header{
         height: 620px;
         padding-top: 3em;
@@ -329,24 +328,14 @@ header #title{
 }
     
 #sec4{
-    height: 1000px;
+    height: 900px;
 }
 
-
-#sec4 #refletImg{
-     z-index: -1;
-    position: absolute;
-    top:5350px;
-    left: 0px;
-    width : 140%;
-    height:auto;
-    left: -20%;
-    opacity: 0;
-}
 
 #sec4 #smallTitle{
-    margin-top: 50px;
-    font-size: 1.5em;
+    margin-top: 0px;
+    padding-top: 3em;
+    font-size: 1.3em;
     color: #757575;
     text-align: center;
     opacity: 0;
@@ -357,9 +346,9 @@ header #title{
 
 
 #sec4 #bigTitle{
-    margin-top: 3em;
+    margin-top: 11.4em;
     width: 100%;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #aeaeae;
     text-align: center;
     font-weight: 900;
@@ -369,7 +358,7 @@ header #title{
 
 #sec4 #txt1{
     font-size: 13px;
-    margin-top: 300px;
+    margin-top: 30px;
     line-height: 30px;
     color: #757575;   
     text-align: center;
@@ -394,6 +383,7 @@ header #title{
 }
 
 #sec5 #title{
+    margin-top: 0;
     width: 100%;
     font-weight: 900;
     letter-spacing: 2px;

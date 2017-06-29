@@ -94,10 +94,15 @@
             animation-timing-function: ease-in-out;
             margin-bottom: 50px;
 }
+    
 
 .tool #list1{
     width: 180px;
 }
+    
+    footer{
+        height: 50px;
+    }
 
 
  

@@ -167,7 +167,6 @@ span {
 #bg1{
     position: absolute;
     left: 0;
-    top:1240px;
     width : 100%;
     height: 600px;  
     background-color: #f3f3f3;
@@ -239,7 +238,6 @@ margin-left: 250px;
 }
 
 #bg2{
-    top: 2230px;
     position: absolute;
     height: 400px;
     width: 100%;
@@ -338,7 +336,6 @@ margin-left: 250px;
 #bg3{
     z-index: -1;
     position: absolute;
-    top:5750px;
     left: 0px;
     height: 2150px;
     width: 100%;
@@ -346,7 +343,8 @@ margin-left: 250px;
 }
 
 #sec6 #title{
-    margin-top: 800px;
+    margin-top: 760px;
+    padding-top: 200px;
     width: 100%;
     font-size: 30px;
     color: #aeaeae;

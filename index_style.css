@@ -104,12 +104,24 @@ nav{
             color: #333333;
             display: flex;
             justify-content: space-between;
-        }   
+        } 
+    .nav_menu div{
+        width: 100px;
+}
     .nav_menu a {
         color: #333333;
         text-decoration: none;
         transition: all .5s;
         }
+
+    .nav_menu #nav02{
+        text-align: center;
+    }
+
+    .nav_menu #nav03{
+        text-align: right;
+    }
+
 
   .nav_menu #nav01:hover{
         font-style: italic;
@@ -242,8 +254,6 @@ nav{
             position: relative;
         }
         
-
-
 #caption{
     position: absolute;
     z-index: 1;
@@ -255,7 +265,7 @@ nav{
 
 #caption #title{
     margin-top: 5em;
-    margin-left: 40px;
+    margin-left: 60px;
     color: #fff;
     font-size: 3em;
     font-weight: 800;
@@ -263,7 +273,7 @@ nav{
 }
 
 #caption #txt{
-    margin-left: 40px;
+    margin-left: 60px;
     margin-top: 1em;
     color: #fff;
     font-size: 1em;
@@ -342,17 +352,17 @@ nav{
 
 .blist:hover #caption{
     opacity: 1; 
-    left: 70px;
+    left: 30px;
     }
 
 .slist_right:hover #caption{
     opacity: 1; 
-    left: 50px;
+    left: 30px;
     }
 
 .slist_left:hover #caption{
     opacity: 1; 
-    left: 50px;
+    left: 30px;
     }
 /*footer*/
 
