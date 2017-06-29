@@ -40,6 +40,18 @@ html * { margin:0; padding:0; }
             from {transform:translateY(50px);}
             to {transform:translateY(0px);}
         }
+
+    @keyframes moveRight_delay{
+            0%{transform:translateX(-20px);}
+            30%{transform:translateX(-20px);}
+            100%{transform:translateX(0px);}
+        }
+
+ @keyframes opacity_delay{
+        0%{opacity: 0;}  
+        30%{opacity: 0;}
+        100%{opacity: 1;}  
+        }
         
     .moveUp{
         animation: moveUp;  
@@ -142,6 +154,10 @@ nav{
         
 /*title---------------------------------------*/
 
+.title_container{
+    overflow: hidden;
+}
+
     #title {
         margin-top: 220px;
         margin-left: 50px;
@@ -153,19 +169,22 @@ nav{
         font-size:3.5em;
         position:relative;
         color:#333;
+        animation: moveUp,opacity;
+        animation-duration: .8s;
 
     }
     
     #title_add{
-        margin-top: 10px;
-          margin-left: 50px;
+            font-weight: 200;
+            margin-top: 10px;
+            margin-left: 50px;
             font-size: 13px;
             letter-spacing: 2px;
             display: inline-block;
         
             animation: moveX, opacity;
             line-height: 2;
-            animation-duration: .5s;
+            animation-duration: .8s;
             animation-timing-function: ease-in-out;
         }
         
@@ -181,9 +200,9 @@ nav{
             font-weight: 700;
             color: #ccc;
             width: 100%;
-            animation: moveX, opacity;
+            animation: moveRight_delay, opacity_delay;
             line-height: 2;
-            animation-duration: .5s;
+            animation-duration: 1.3s;
             animation-timing-function: ease-in-out;
 }
 
@@ -207,9 +226,9 @@ nav{
             letter-spacing: 2px;
             font-weight: 400;
             color: #ccc;
-            animation: moveX, opacity;
+            animation: moveRight_delay, opacity_delay;
             line-height: 3;
-            animation-duration: .5s;
+            animation-duration: 1.3s;
             animation-timing-function: ease-in-out;
             margin-bottom: 80px;
 }

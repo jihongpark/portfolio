@@ -21,6 +21,9 @@
     .title_container{
             margin-top: 60px;
         }
+    #title_container{
+        overflow: hidden;
+    }
     header #title{
             margin-top: 55px;
             margin-left: 80px;
@@ -28,9 +31,8 @@
             letter-spacing: 2px;
             font-size: 55px;
             display: inline-block;
-            animation : moveRight, opacity;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
+            animation : moveUp;
+            animation-duration: .8s;
             
         }
         

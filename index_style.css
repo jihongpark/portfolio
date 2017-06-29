@@ -270,6 +270,7 @@ nav{
     font-weight: 200;
     letter-spacing: 3px;
     line-height: 1.5;
+    
 }
 
 
@@ -310,6 +311,7 @@ nav{
 
 .blist img, .slist_right img, .slist_left img{
     transition: all .8s;
+    animation-timing-function: ease-in-out;
 }
 
 .blist:hover img{
