@@ -7,8 +7,8 @@ html * { margin:0; padding:0; }
 /*animation*/
 
     @keyframes bg_longer{
-            from {background-size: 0% 1200px;}
-            to {background-size: 40% 1200px;}
+            from {background-size: 0% 100%;}
+            to {background-size: 40% auto;}
         }
         
     @keyframes reverse_blur{
@@ -25,7 +25,7 @@ html * { margin:0; padding:0; }
         
     @keyframes nav_longer{
             from {width : 200px;}
-            to {width : 1200px;}
+            to {width : 100%;}
         }
     @keyframes positionDowntoUp{
             from { transform}
@@ -48,11 +48,11 @@ html * { margin:0; padding:0; }
         }
 
     .bold{
-        font-weight: 600;
+        font-weight: 500;
         top: 30px;
         position: fixed;
-        width: 88.5%;
-        font-weight: 600;
+        width: 90%;
+        max-width: 90em;
         mix-blend-mode: multiply;
     }
         
@@ -61,12 +61,12 @@ html * { margin:0; padding:0; }
             font-weight: 200;
             font-size: 14px;
             letter-spacing: 1px;
-            background-image: url(img/bg_grad1.png);
+            background-image: url(img/contact_bg.png);
             background-position: 100% 0;
-            background-size: 40% 1200px;
+            background-size: 40% auto;
             background-repeat: no-repeat;
             animation: bg_longer, opacity;
-            animation-duration: .3s;
+            animation-duration: .5s;
             animation-timing-function: ease-in-out;
             position: relative;
             
@@ -111,23 +111,11 @@ nav{
         transition: all .5s;
         }
 
-   .nav_menu input{
-        border: none;
-        position: relative;
-        color: #333;
-        background-color: transparent;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 200;
-        font-size: 14px;
-        letter-spacing: 1px;
-        transition: all .5s;
-        } 
-
-  .nav_menu #nav01:hover{
+   .nav_menu #nav01:hover{
         font-style: italic;
         font-weight: 600;
         color: #666;
-        background-color: rgba(255, 180, 126, .2);
+        background-color: rgba(255, 180, 126, .3);
     
     }
 
@@ -135,10 +123,17 @@ nav{
         font-style: italic;
         font-weight: 600;
         color: #666;
-        background-color: rgba(79, 72, 255, .2);
+        background-color: rgba(185, 155, 202, .4);
     
     }  
 
+.nav_menu #nav03:hover{
+        font-style: italic;
+        font-weight: 600;
+        color: #666;
+        background-color: rgba(79, 72, 255, .2);
+    
+    }
 
 /*--navigationEnd------------------------------*/
 
@@ -178,31 +173,6 @@ nav{
             animation-timing-function: ease-in-out;
         }
         
-     #subtitle{
-            float : right;
-            margin-top: -250px;
-            margin-right: 150px;
-            font-weight: 900;
-            font-style: italic;
-            font-size: 50px;
-            color: rgba(200,200,200,0.5);
-            letter-spacing: 4px;
-            mix-blend-mode : multifly;
-            display: inline-block;
-            animation: reverse_blur, moveX;
-            animation-duration: 1s;
-            -webkit-filter: blur(8px);
-            filter: blur(8px);
-            transition: all 1s;
-        }
-        
-    #subtitle:hover{
-            -webkit-filter: none;
-            filter: none;
-            color: rgba(150,150,150,0.5);
-            font-style: none;
-            margin-right: 130px;
-        }
 
 
 
@@ -221,7 +191,16 @@ nav{
             animation-timing-function: ease-in-out;
 }
 
+#title_add a:link{
+    color:rgba(79,72,255,73);
+}
+#title_add a:hover{
+    color:#FFB47E;
+}
 
+#title_add a{
+    text-decoration: none;
+}
 
 .tool{
     display: flex;
@@ -236,7 +215,7 @@ nav{
             line-height: 3;
             animation-duration: .5s;
             animation-timing-function: ease-in-out;
-            margin-bottom: 100px;
+            margin-bottom: 80px;
 }
 
 .tool #list1{

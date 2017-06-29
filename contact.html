@@ -26,7 +26,8 @@
 My strength lies in UX, UI design.<br>
 But I enjoy every kinds of work and I constantly challenge new kinds of work.<br>
 If you know more about me, feel free to contact me<br>
-on pjhtina@gmail.com.
+on 
+<a href="mailto:pjhtina@gmail.com">pjhtina@gmail.com.</a> 
             </div>
             
             
@@ -36,7 +37,7 @@ on pjhtina@gmail.com.
                     photoshop<br>
                     illustrator<br>
                     sketch<br>
-                    indesign<br>
+                    Indesign<br>
                     aftereffect<br>
 
                 </div>
@@ -65,8 +66,12 @@ on pjhtina@gmail.com.
             <a href="index.html" id="jihong">jihong.park</a>
            </div>
            <div id="nav02">
-            <a id="nav_work">work</a>
+            <a href="index.html" id="nav_work">work</a>
             </div>
+            <div id="nav03">
+            <a a href="contact.html" id="nav_contact">contact</a>
+            </div>
+            
             </div>
         </nav>
 </div>
@@ -81,7 +86,22 @@ on pjhtina@gmail.com.
 
 <script>
 
+    $(window).scroll( function(){
     
+        /* Check the location of each desired element */
+        $('.nav_menu').each( function(i){
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( $(window).scrollTop() > 30){
+                $('.nav_menu').addClass('bold',100);
+                    
+            } else if($(window).scrollTop() <= 30){
+                $('.nav_menu').removeClass('bold',100);
+            }
+            
+        }); 
+    
+    });
 
     
 </script>    
