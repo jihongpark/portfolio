@@ -296,8 +296,12 @@ header{
     width: 660px;
 }
 
-.icon_container_1 #hidden{
+#hidden{
     visibility: hidden;
+}
+
+.icon_container_1 #mobileShown{
+   visibility: hidden; 
 }
 
 

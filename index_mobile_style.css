@@ -125,8 +125,8 @@
           opacity:0;
     }
     .console-container {
-        margin-top: 180px;
-        margin-left: 0px;
+        margin-top: 200px;
+        margin-left: 20px;
         font-weight: 900;
         letter-spacing: 2px;
         display: inline-block;
@@ -148,7 +148,7 @@
 /*title_animation_end-----------------------------------*/
     
     #title_add{
-          margin-left: 0px;
+          margin-left: 20px;
             font-size: 13px;
             letter-spacing: 9px;
             display: inline-block;
