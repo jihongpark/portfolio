@@ -306,11 +306,12 @@ header #title{
 }
 
 #sec3 #name02{
-     width: 100%;
+    width: 100%;
     margin-top: 1em;
     color : #ccc;
     font-weight: 900;
     font-size: 3em;
+    text-align: left;
     letter-spacing: 3px;
     display: inline-block;
     opacity: 0;
