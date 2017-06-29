@@ -12,13 +12,29 @@
             position: relative;
             
         }
+    
 
+     #nav_grad{
+        margin-bottom: 13px;
+        height: 12px;
+        width: 100%;
+    }
+        
+    
+    .nav_menu div{
+        width: 80px;
+    }
+    
+    .nav_menu a { 
+        font-size: 12px;    
+    
+        } 
 /*--navigationEnd------------------------------*/
 
     header{
         height: 704px;
         padding-top: 25px; 
-        margin-top: 45px;
+        margin-top: 30px;
         }
         
 /*title---------------------------------------*/
