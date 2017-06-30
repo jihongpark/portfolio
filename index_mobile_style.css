@@ -152,9 +152,6 @@
             height: 20em;
             background-color: #f3f3f3;  
             margin-top: 20px;
-            transition: box-shadow, transform 1s;
-            overflow: hidden;
-            transition: all 1s;
         }
         
     .blist{
