@@ -121,17 +121,27 @@
         }
         
      #subtitle{
-             width: 100%;
-         visibility: hidden;
+               float : right;
+            margin-top: -300px;
+            margin-right: 150px;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 50px;
+            color: rgba(200,200,200,0.5);
+            letter-spacing: 4px;
+            mix-blend-mode : multifly;
+            display: inline-block;
+            animation: reverse_blur, moveX;
+            -webkit-filter: blur(8px);
+            filter: blur(8px);
+            visibility: hidden;
         }
         
-    #subtitle:hover{
-            -webkit-filter: none;
-            filter: none;
-            color: rgba(150,150,150,0.5);
-            font-style: none;
         }
-    #title_work{
+    #workTitle{
+            position: relative;
+            padding-top: 26px;
+        padding-bottom: 0px;
             margin-top: 0px;
             font-size:1.5em;
             text-align: center;

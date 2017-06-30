@@ -150,7 +150,7 @@ nav{
 /*--navigationEnd------------------------------*/
 
     header{
-        height: 704px;
+        height: 685px;
         padding-top: 25px; 
         margin-top: 45px;
         }
@@ -223,8 +223,9 @@ nav{
 
 /*work list*/
 
-    #title_work{
-            font-size: 30px;
+    #workTitle{
+            padding-top: 1em;
+            font-size: 24px;
             text-align: center;
             font-weight: 800;
             color: #ccc;
