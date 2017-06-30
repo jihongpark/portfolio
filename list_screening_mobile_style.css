@@ -5,7 +5,6 @@
 
 
 header{
-        height: 670px;
         padding-top: 3em;
     
             
@@ -53,14 +52,14 @@ header #title{
         
 #subtitle2{
             margin-left: 20px;
-            margin-top: 29em;
+            margin-top: 28em;
             font-size: 12px;
             letter-spacing: 2px;
             line-height: 23px;
             animation : moveRight_delay, opacity_delay;
             animation-duration: 1.8s;
             animation-timing-function: ease-in-out;
-            margin-bottom: 29em;
+            margin-bottom: 3em;
      }
     
     

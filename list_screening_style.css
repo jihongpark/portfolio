@@ -1,6 +1,6 @@
 /* header*/
 header{
-        height: 480px;
+       
         padding-top: 85px;
         margin-top: 66px;
             
@@ -49,6 +49,7 @@ header{
         }
         
     #subtitle2{
+            width: 320px;
             margin-left: 20px;
             margin-top: 12px;
             font-size: 12px;
@@ -57,6 +58,7 @@ header{
             animation : moveRight_delay, opacity_delay;
             animation-duration: 1.8s;
             animation-timing-function: ease-in-out;
+            margin-bottom: 18em;
         }
         
   #grad_line{
