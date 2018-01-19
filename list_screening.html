@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
+
   <!-- googleAnalytics-->
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -13,7 +13,13 @@
   ga('send', 'pageview');
 
 </script>
-
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5M9MMDG');</script>
+<!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,35 +27,35 @@
    <link rel="stylesheet" href="list_screening_style.css">
    <link rel="stylesheet" href="list_screening_mobile_style.css">
     <style>
-        
+
     @keyframes reverse_blur{
         from { -webkit-filter: none;
             filter: none;}
         to{-webkit-filter: blur(8px);
             filter: blur(8px);}
         }
-    
+
     @keyframes opacity{
-        from{opacity: 0;}  
-        to{opacity: 1;}  
+        from{opacity: 0;}
+        to{opacity: 1;}
         }
-    
+
     @keyframes opacity_delay{
         0%{opacity: 0;}
         20%{opacity: 0;}
-        100%{opacity: 1;}  
+        100%{opacity: 1;}
         }
-        
+
     @keyframes nav_longer{
             from {width : 200px;}
             to {width : 1200px;}
         }
-    
+
     @keyframes moveRight{
             from {transform:translateX(-20px);}
             to {transform:translateX(0px);}
         }
-        
+
     @keyframes moveRight_delay{
             0%{transform:translateX(-20px);}
             20%{transform:translateX(-20px);}
@@ -58,18 +64,18 @@
       @keyframes moveLeft{
             from {transform:translateX(20px);}
             to {transform:translateX(0px);}
-        }    
+        }
     @keyframes moveUp{
             from {transform:translateY(50px);}
             to {transform:translateY(0px);}
         }
-        
+
     .moveUp{
-        animation: moveUp;  
+        animation: moveUp;
         animation-duration: .5s;
         animation-timing-function: ease-in-out;
         }
-        
+
      .bold{
         top: 30px;
         position: fixed;
@@ -78,15 +84,15 @@
         font-weight: 500;
         mix-blend-mode: multiply;
     }
-        
-        
+
+
     body{
             font-family: 'Montserrat', sans-serif;
             font-weight: 200;
             font-size: 14px;
             letter-spacing: 1px;
-        
-            
+
+
         }
 
     .container{
@@ -95,14 +101,14 @@
         max-width: 90em;
         }
 
-        
+
 /*--navigation----------------------------------*/
   nav{
     width: 90%;
     max-width: 90em;
     position: absolute;
     top: 45px;
-}   
+}
     #nav_grad{
         margin-bottom: 13px;
         height: 14px;
@@ -116,12 +122,12 @@
         animation-duration: .5s;
         animation-timing-function: ease-in-out;
         }
-        
+
     .nav_menu{
             color: #333333;
             display: flex;
             justify-content: space-between;
-        }   
+        }
     .nav_menu div{
         width: 100px;
 }
@@ -144,7 +150,7 @@
         font-weight: 600;
         color: #666;
         background-color: rgba(255, 180, 126, .3);
-    
+
     }
 
    .nav_menu #nav02:hover{
@@ -152,17 +158,17 @@
         font-weight: 600;
         color: #666;
         background-color: rgba(185, 155, 202, .4);
-    
-    }  
+
+    }
 
 .nav_menu #nav03:hover{
         font-style: italic;
         font-weight: 600;
         color: #666;
         background-color: rgba(79, 72, 255, .2);
-    
+
     }
-  
+
         @media ( max-width: 768px ) {
     nav{
         top:30px;
@@ -170,12 +176,12 @@
     .nav_menu div{
         width: 80px;
     }
-    
-    .nav_menu a { 
-        font-size: 12px;    
-    
+
+    .nav_menu a {
+        font-size: 12px;
+
         }
-    
+
     #nav_grad{
 
         height: 12px;
@@ -183,19 +189,22 @@
 
         }
  }
-        
+
     </style>
-    
+
 </head>
 
 
 <body>
-        
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M9MMDG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div class="container">
 
-        
+
 <!--        header-->
-       
+
         <header>
         <div class="title_container">
         <div id="title_container">
@@ -209,16 +218,16 @@
             <div id="subtitle2">
             Screening 2015 introduces 5 video artists and their artworks.
             </div>
-            
+
         </div>
         <img src="img/screening2015/coverimg.png" alt="" id="coverimg">
         </header>
         <div id="grad_line"></div>
-                
+
 <!--        contents-->
-       
+
        <section>
-           
+
            <div id="sec1">
               <div id="title">
                 COLORS
@@ -227,7 +236,7 @@
                 Assign each individual color to each Artist.
                 </div>
                 <div class="divider">
-                    
+
                     <div>
                        <div id="color1"></div>
                         Jisong Lee
@@ -248,10 +257,10 @@
                        <div id="color5"></div>
                         Sung Rok Choi
                     </div>
-                    
-                </div> 
+
+                </div>
             </div>
-           
+
             <div id="sec2">
               <div id="title">
                 4 COLUMN GRID
@@ -261,9 +270,9 @@
                 </div>
                 <img src="img/screening2015/column01.png" alt="">
                 <img src="img/screening2015/column02.png" alt="">
-                
+
             </div>
-           
+
            <div id="sec3">
             <div id="title">
                 OTHER PAGES
@@ -272,54 +281,54 @@
                  Cover - <span>Sung Rok Choi</span>
             </div>
             <img src="img/screening2015/page01_cover.png"  id="img01">
-            
+
              <div id="txt02" class="caption">
                  CV, Critic - <span>Sung Rok Choi</span>
             </div>
             <img src="img/screening2015/page02_CV.png"  id="img02">
-            
+
              <div id="txt03" class="caption">
                  Critic - <span>Sung Rok Choi</span>
             </div>
             <img src="img/screening2015/page03_Critic.png"  id="img03">
-            
+
             <div id="txt04" class="caption">
                  Interview - <span>Ayoung Kim</span>
             </div>
             <img src="img/screening2015/page04_Interview.png"  id="img04">
-            
+
             <div id="txt05" class="caption">
                  Cover - <span>Ki Woun Shin</span>
             </div>
             <img src="img/screening2015/page05_cover.png"  id="img05">
-               
+
             <div id="txt06" class="caption">
                  CV, Critic - <span>Ki Woun Shin</span>
             </div>
             <img src="img/screening2015/page06_cv.png"  id="img06">
-            
-            
+
+
              </div>
-              
-              
-               
-           
-           
-           
-           
-           
-           
-           
-           
+
+
+
+
+
+
+
+
+
+
+
        </section>
-       
+
           <div id="bg1"></div>
           <div id="bg2"></div>
-        
+
 <!--        contentsEnd-->
         <footer>
            <div id="grad_line"></div>
-           <div class="container"> 
+           <div class="container">
            <div id="prev">
               <a href="list_zcrowd.html">
                <div id="textarea">
@@ -338,7 +347,7 @@
                </a>
            </div>
            </div>
-           <div id="grad_line"></div> 
+           <div id="grad_line"></div>
         </footer>
     <nav>
             <div id="nav_grad">
@@ -355,81 +364,81 @@
             </div>
             </div>
         </nav>
-  </div> 
+  </div>
 
 <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 
 <script>
-    
+
     //    nav
 $(window).scroll( function(){
-    
+
         /* Check the location of each desired element */
         $('.nav_menu').each( function(i){
-            
+
             /* If the object is completely visible in the window, fade it it */
             if( $(window).scrollTop() > 30){
                 $('.nav_menu').addClass('bold',100);
-                    
+
             } else if($(window).scrollTop() <= 30){
                 $('.nav_menu').removeClass('bold',100);
             }
-            
-        }); 
-    
+
+        });
+
     });
-    
-    
-    
+
+
+
 $(document).ready(function() {
-    
+
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-    
+
         /* Check the location of each desired element */
         $('section div').each( function(i){
-            
+
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
+
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object){
-                
+
                 $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
-                    
+
             }
-            
-        }); 
-    
+
+        });
+
     });
-    
+
 });
-    
-    
+
+
 $(document).ready(function() {
-    
+
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-    
+
         /* Check the location of each desired element */
         $('#sec3 img').each( function(i){
-            
+
             var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
+
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object){
                 $(this).animate({'opacity':'1'},500).addClass('moveUp',500);
-                    
-            }
-            
-        }); 
-    
-    });
-    
-});
-    
 
-</script>    
+            }
+
+        });
+
+    });
+
+});
+
+
+</script>
 </body>
 </html>
