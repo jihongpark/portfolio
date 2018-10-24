@@ -80,7 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div id="list2" class="slist_left">
                 <a href="list_screening.html">
 
-                   <div id="caption">
+                <div id="caption">
                         <div id="title">
                         Screening 2015
                         </div>
@@ -144,8 +144,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="index.html" id="jihong">jihong.park</a>
            </div>
            <div id="nav02">
-            <a id="nav_work" href="#workTitle" >work</a>
+               <div id="nav02_1">
+                <a id="nav_work" href="#workTitle" >work</a>
+                </div>
+
+                <div id="nav02_2">
+                <a id="nav_play" href="/play" >play</a>
+                </div>
+
             </div>
+
             <div id="nav03">
             <a a href="contact.html" id="nav_contact">contact</a>
             </div>
@@ -181,7 +189,7 @@ $('html, body').animate({
 
 //main_text_animation------------------------
 
- consoleText(['Hello','I\'m Jihong.Park', 'I Love What I Do'], 'text',['#333','#333','#333']);
+ consoleText(['Hello','I\'m Jihong.Park', 'I\im UXUI Designer'], 'text',['#333','#333','#333']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
